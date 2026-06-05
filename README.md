@@ -7,6 +7,8 @@ A mod that adds Terraria items into Balatro
 - Ore tiers -> seals
 - Reforges -> enchantments
 - Armor sets -> decks
+- HP and taking damage related things -> chips
+- Damage -> mult
 ## Planned features
 ### Jokers
 - Mana Crystal

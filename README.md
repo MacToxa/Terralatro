@@ -6,7 +6,7 @@ A mod that adds Terraria items into Balatro
 - Consumables -> tarot cards
 - Ore tiers -> seals
 - Reforges -> enchantments
-- Armor sets -> decks
+- Armor sets -> decks (Addon content: [Terralatro-Decks](https://github.com/MacToxa/Terralatro-Decks))
 - HP and taking damage related things -> chips
 - Damage -> mult
 ## Planned features

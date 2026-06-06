@@ -1,0 +1,17 @@
+{
+  "id": "terralatro",
+  "name": "Terralatro",
+  "author": [
+    "MacToxa"
+  ],
+  "description": "Things from Terraria:\n- Terraria ore tiers as seals\n- Accessories as jokers\n- Consumables as ...consumables\n- Armor sets as decks\nAlso disables all vanilla jokers except Jimbo",
+  "prefix": "terralat",
+  "main_file": "main.lua",
+  "version": "1.0.0",
+  "priority": 0,
+  "badge_colour": "666665",
+  "badge_text_colour": "FFFFFF",
+  "dependencies": [
+    "Steamodded (>=1.0.0~BETA-0827c)"
+  ]
+}

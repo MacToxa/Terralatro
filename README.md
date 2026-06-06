@@ -11,9 +11,9 @@ A mod that adds Terraria items into Balatro
 - Damage -> mult
 ## Planned features
 ### Jokers
-- Mana Crystal
-> 20 mana, mana tracks on the joker
+- ✅ Mana Crystal
+> 20 mana
 >> Always spawns negative
-- Heart Crystal
+- ✅ Heart Crystal
 > +20 chips
 >> Always spawns negative

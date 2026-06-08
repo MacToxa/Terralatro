@@ -3,7 +3,7 @@ A mod that adds Terraria items into Balatro
 ## How it works
 - Accessories -> jokers
 - Permanent buff consumables -> negative jokers
-- Consumables -> tarot cards
+- Potions, other consumables -> tarot cards
 - Ore tiers -> seals
 - Reforges -> enchantments
 - Armor sets -> decks (Addon content: [Terralatro-Decks](https://github.com/MacToxa/Terralatro-Decks))

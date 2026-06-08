@@ -22,6 +22,7 @@ A mod that adds Terraria items into Balatro
 ### Craftable jokers (do not appear in shop/packs)
 - ❌ Spectre Boots
 > +10 chips for each remaining discard
+> 
 > +1 discard
 >> Hermes Boots + Rocket Boots
 ### Jokers (Else)

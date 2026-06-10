@@ -23,6 +23,8 @@ A mod that adds Terraria items into Balatro
 > A lot of potions as tarots
 >
 > An option to disable vanilla jokers, vouchers, and tarots (will be on by default)
+- ❌ 0.5
+> Permanent consumables rework, all permanent consumables will be vouchers, there will be added more, and there will be upgraded voucher versions of current ones
 ## Planned features
 ### Jokers (Permanent buffs) -> negative jokers
 - ✅ Mana Crystal

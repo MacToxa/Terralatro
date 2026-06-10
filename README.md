@@ -16,6 +16,11 @@ A mod that adds Terraria items into Balatro
 - ✅ 0.2 (Movement Expansion)
 > A lot of movement related accessories, and also a few economy related ones
 
+- ❌ 0.2.1 (Fix)
+> Threw away 3 hours worth of progress on 0.3 to fix game breaking bugs
+>
+> Recipes are now going to be tarot cards with their own pack
+
 - ❌ 0.3 (Excavation Update)
 > Ore seals that are currently planned
 

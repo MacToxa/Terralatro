@@ -100,9 +100,6 @@ A mod that adds Terraria items into Balatro
 - ✅ Band of Starpower
 > +20 mana
 
-- ✅ Band of Starpower
-> +20 mana
-
 - ✅ Shiny Red Balloon
 > Allows 1 card gaps in straights
 

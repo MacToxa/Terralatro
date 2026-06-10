@@ -4,17 +4,14 @@ SMODS.Joker{ --Palladins Shield
     config = {
         extra = {
             palladinJokerCount = 0,
-            jokercount = 0,
-            repetitions = 1,
-            chips0 = 10,
-            chips = 50
+            levels0 = 1
         }
     },
     loc_txt = {
         ['name'] = 'Palladins Shield',
         ['text'] = {
-            [1] = '{C:blue}+50 Chips{}',
-            [2] = '{C:blue}+10 Chips{} for every joker excluding this one'
+            [1] = '{C:attention}+1{} hand level to the most played',
+            [2] = 'hand every hand played'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -28,8 +25,8 @@ SMODS.Joker{ --Palladins Shield
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 6,
-    rarity = 2,
+    cost = 9,
+    rarity = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -40,21 +37,31 @@ SMODS.Joker{ --Palladins Shield
     
     loc_vars = function(self, info_queue, card)
         
-        return {vars = {card.ability.extra.palladinJokerCount, #(G.jokers and (G.jokers and G.jokers.cards or {}) or {})}}
+        return {vars = {card.ability.extra.palladinJokerCount}}
     end,
     
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
-            if true then
-                card.ability.extra.palladinJokerCount = #(G.jokers and G.jokers.cards or {})
-                for i = 1, card.ability.extra.repetitions do
-                    SMODS.calculate_effect({chips = 10}, card)
+            local temp_played = 0
+            local temp_order = math.huge
+            local target_hand
+            for hand, value in pairs(G.GAME.hands) do 
+                if value.played > temp_played and value.visible then
+                    temp_played = value.played
+                    temp_order = value.order
+                    target_hand = hand
+                elseif value.played == temp_played and value.visible then
+                    if value.order < temp_order then
+                        temp_order = value.order
+                        target_hand = hand
+                    end
                 end
-            else
-                return {
-                    chips = 50
-                }
             end
+            
+            level_up_hand(card, target_hand, true, 1)
+            return {
+                message = localize('k_level_up_ex')
+            }
         end
     end
 }

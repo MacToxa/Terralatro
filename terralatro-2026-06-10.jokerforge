@@ -1,0 +1,2909 @@
+{
+  "metadata": {
+    "id": "terralatro",
+    "name": "Terralatro",
+    "author": [
+      "MacToxa"
+    ],
+    "description": "Things from Terraria:\n- Terraria ore tiers as seals\n- Accessories as jokers\n- Consumables as ...consumables\n- Armor sets as decks\nAlso disables all vanilla jokers except the base Joker",
+    "prefix": "terralat",
+    "main_file": "main.lua",
+    "version": "1.0.0",
+    "priority": 0,
+    "badge_colour": "666665",
+    "badge_text_colour": "FFFFFF",
+    "display_name": "Terralatro",
+    "dependencies": [
+      "Steamodded (>=1.0.0~BETA-0827c)"
+    ],
+    "conflicts": [],
+    "provides": [],
+    "gameImage": "/images/balatro.png",
+    "iconImage": "/images/modicon.png",
+    "hasUserUploadedIcon": false,
+    "hasUserUploadedGameIcon": false,
+    "disable_vanilla": true
+  },
+  "jokers": [
+    {
+      "objectKey": "avengeremblem",
+      "id": "137138f1-3dd3-4192-9c08-aae2ca90c753",
+      "name": "Avenger Emblem",
+      "description": "The combination of all suit emblems[s]Every card scored gives {C:red}+2 Mult{}[s] {X:red,C:white}x12{} {C:red}Mult{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 2,
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": false,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "c933c832-a949-4ec8-8ce9-36d85da36518",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "e34ee23d-8b43-442c-b48e-2c202150ceb7",
+              "type": "apply_x_mult",
+              "params": {
+                "value": {
+                  "value": 12,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 828,
+            "y": 312
+          }
+        },
+        {
+          "id": "1239bf99-66fe-4b16-b3f3-f7a7231f3cf6",
+          "trigger": "card_scored",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "be4c45e9-a5cd-4ff0-ad54-1c09bb3312c9",
+              "type": "add_mult",
+              "params": {
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 466,
+            "y": 313
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 17,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": false,
+        "jud": false,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": false,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 1,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "heartsemblem",
+      "id": "fbaed596-f9bf-41d6-b5cf-758e2fdb3b0b",
+      "name": "Hearts Emblem",
+      "description": "{C:red}+2 Mult{} every {C:hearts}Hearts{} card scored",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "17b665b8-2cd1-41b5-b83d-66dbbd2c33d5",
+          "trigger": "card_scored",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "ead59661-127b-478c-8106-7a89d0e74177",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "9165e635-8e30-41fb-b677-3cb45742e975",
+                  "type": "card_suit",
+                  "negate": false,
+                  "params": {
+                    "suit_type": {
+                      "value": "specific",
+                      "valueType": "text"
+                    },
+                    "specific_suit": {
+                      "value": "Hearts",
+                      "valueType": "text"
+                    },
+                    "suit_group": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "0a3decb9-8220-4086-9851-5c866dd021c2",
+              "type": "add_mult",
+              "params": {
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 15,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 2,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "spadeemblem",
+      "id": "4d11bfd9-c0dc-4d88-8f61-a2d10920a66e",
+      "name": "Spade Emblem",
+      "description": "{C:red}+2 Mult{} every {C:spades}Spade{} card scored",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "17b665b8-2cd1-41b5-b83d-66dbbd2c33d5",
+          "trigger": "card_scored",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "ead59661-127b-478c-8106-7a89d0e74177",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "9165e635-8e30-41fb-b677-3cb45742e975",
+                  "type": "card_suit",
+                  "negate": false,
+                  "params": {
+                    "suit_type": {
+                      "value": "specific",
+                      "valueType": "text"
+                    },
+                    "specific_suit": {
+                      "value": "Spades",
+                      "valueType": "text"
+                    },
+                    "suit_group": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "cc97341a-35b5-4c36-8bd1-4484f493a324",
+              "type": "add_mult",
+              "params": {
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 15,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 3,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "diamondemblem",
+      "id": "45c9b548-579a-4ea2-bc60-f05cacd80234",
+      "name": "Diamond Emblem",
+      "description": "{C:red}+2 Mult{} every {C:diamonds}Diamond{} card scored",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "17b665b8-2cd1-41b5-b83d-66dbbd2c33d5",
+          "trigger": "card_scored",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "ead59661-127b-478c-8106-7a89d0e74177",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "9165e635-8e30-41fb-b677-3cb45742e975",
+                  "type": "card_suit",
+                  "negate": false,
+                  "params": {
+                    "suit_type": {
+                      "value": "specific",
+                      "valueType": "text"
+                    },
+                    "specific_suit": {
+                      "value": "Diamonds",
+                      "valueType": "text"
+                    },
+                    "suit_group": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "a8851457-88fe-40f9-bb2a-970a2b5bce43",
+              "type": "add_mult",
+              "params": {
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 15,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 50,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 4,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "clubemblem",
+      "id": "0c5ce895-004d-42c5-afb4-08e49c7cc099",
+      "name": "Club Emblem",
+      "description": "{C:red}+2 Mult{} every {C:clubs}Club{} card scored",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "17b665b8-2cd1-41b5-b83d-66dbbd2c33d5",
+          "trigger": "card_scored",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "ead59661-127b-478c-8106-7a89d0e74177",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "9165e635-8e30-41fb-b677-3cb45742e975",
+                  "type": "card_suit",
+                  "negate": false,
+                  "params": {
+                    "suit_type": {
+                      "value": "specific",
+                      "valueType": "text"
+                    },
+                    "specific_suit": {
+                      "value": "Clubs",
+                      "valueType": "text"
+                    },
+                    "suit_group": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "bc94b90c-4d17-49eb-9fff-5252b34c7c46",
+              "type": "add_mult",
+              "params": {
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 15,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 5,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "avengeremblemrecipe",
+      "id": "6b835711-2321-49ab-9df5-581bfd4feaa8",
+      "name": "Avenger Emblem Recipe",
+      "description": "Recipe; can be sold to craft Avenger Emblem[s]Requirements:[s]- {C:spades}Spade{} Emblem[s]- {C:hearts}Hearts{} Emblem[s]- {C:diamonds}Diamonds{} Emblem[s]- {C:clubs}Clubs{} Emblem",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": "recipes",
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "force_foil": false,
+      "force_holographic": false,
+      "force_polychrome": false,
+      "force_negative": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "74de5179-54f9-4089-8dd7-db825992042b",
+          "trigger": "selling_self",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "fe334370-3297-4ec5-9678-62d383d605b3",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "2e59b889-56ed-44c7-aab8-fb9869117666",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "text"
+                    },
+                    "joker_key": {
+                      "value": "terralat_spadeemblem",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  }
+                },
+                {
+                  "id": "8f3fc17e-e8ab-4b11-9695-9054115bfd3a",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "unknown"
+                    },
+                    "joker_key": {
+                      "value": "terralat_heartsemblem",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  }
+                },
+                {
+                  "id": "ad8dff09-28b7-4842-bc44-f5b89008e6eb",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "unknown"
+                    },
+                    "joker_key": {
+                      "value": "terralat_diamondemblem",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  }
+                },
+                {
+                  "id": "63c49aef-5393-4a52-bbf3-860b9f58b9f2",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "unknown"
+                    },
+                    "joker_key": {
+                      "value": "terralat_clubemblem",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "64ded974-7838-43ef-a2f7-7041a8507642",
+              "type": "create_joker",
+              "params": {
+                "joker_type": {
+                  "value": "specific",
+                  "valueType": "text"
+                },
+                "rarity": {
+                  "value": "random",
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "terralat_avengeremblem",
+                  "valueType": "text"
+                },
+                "pool": {
+                  "value": "",
+                  "valueType": "unknown"
+                },
+                "edition": {
+                  "value": "none",
+                  "valueType": "unknown"
+                },
+                "sticker": {
+                  "value": "none",
+                  "valueType": "unknown"
+                },
+                "ignore_slots": {
+                  "value": "respect",
+                  "valueType": "unknown"
+                }
+              }
+            },
+            {
+              "id": "0ebfe471-8c70-4719-9858-55b9ac54c332",
+              "type": "destroy_joker",
+              "params": {
+                "selection_method": {
+                  "value": "specific",
+                  "valueType": "text"
+                },
+                "joker_key": {
+                  "value": "terralat_spadeemblem",
+                  "valueType": "text"
+                },
+                "position": {
+                  "value": "first",
+                  "valueType": "unknown"
+                },
+                "specific_index": {
+                  "value": 1,
+                  "valueType": "number"
+                },
+                "bypass_eternal": {
+                  "value": "no",
+                  "valueType": "unknown"
+                },
+                "sell_value_multiplier": {
+                  "value": 0,
+                  "valueType": "number"
+                },
+                "variable_name": {
+                  "valueType": "unknown"
+                },
+                "animation": {
+                  "value": "start_dissolve",
+                  "valueType": "unknown"
+                }
+              }
+            },
+            {
+              "id": "3a0a4856-83db-402c-ab00-c55f4811e33a",
+              "type": "destroy_joker",
+              "params": {
+                "selection_method": {
+                  "value": "specific",
+                  "valueType": "text"
+                },
+                "joker_key": {
+                  "value": "terralat_heartsemblem",
+                  "valueType": "text"
+                },
+                "position": {
+                  "value": "first",
+                  "valueType": "unknown"
+                },
+                "specific_index": {
+                  "value": 1,
+                  "valueType": "number"
+                },
+                "bypass_eternal": {
+                  "value": "no",
+                  "valueType": "unknown"
+                },
+                "sell_value_multiplier": {
+                  "value": 0,
+                  "valueType": "number"
+                },
+                "variable_name": {
+                  "valueType": "unknown"
+                },
+                "animation": {
+                  "value": "start_dissolve",
+                  "valueType": "unknown"
+                }
+              }
+            },
+            {
+              "id": "91473aad-340f-4b91-b8cf-8093e9fd826d",
+              "type": "destroy_joker",
+              "params": {
+                "selection_method": {
+                  "value": "specific",
+                  "valueType": "text"
+                },
+                "joker_key": {
+                  "value": "terralat_diamondemblem",
+                  "valueType": "text"
+                },
+                "position": {
+                  "value": "first",
+                  "valueType": "unknown"
+                },
+                "specific_index": {
+                  "value": 1,
+                  "valueType": "number"
+                },
+                "bypass_eternal": {
+                  "value": "no",
+                  "valueType": "unknown"
+                },
+                "sell_value_multiplier": {
+                  "value": 0,
+                  "valueType": "number"
+                },
+                "variable_name": {
+                  "valueType": "unknown"
+                },
+                "animation": {
+                  "value": "start_dissolve",
+                  "valueType": "unknown"
+                }
+              }
+            },
+            {
+              "id": "9d34554a-d5aa-42ba-8c89-bc7fb949909b",
+              "type": "destroy_joker",
+              "params": {
+                "selection_method": {
+                  "value": "specific",
+                  "valueType": "text"
+                },
+                "joker_key": {
+                  "value": "terralat_clubemblem",
+                  "valueType": "text"
+                },
+                "position": {
+                  "value": "first",
+                  "valueType": "unknown"
+                },
+                "specific_index": {
+                  "value": 1,
+                  "valueType": "number"
+                },
+                "bypass_eternal": {
+                  "value": "no",
+                  "valueType": "unknown"
+                },
+                "sell_value_multiplier": {
+                  "value": 0,
+                  "valueType": "number"
+                },
+                "variable_name": {
+                  "valueType": "unknown"
+                },
+                "animation": {
+                  "value": "start_dissolve",
+                  "valueType": "unknown"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 802,
+            "y": 295
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 23,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 6,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "demonheart",
+      "id": "e1f97cc2-925c-4cf6-99b7-63ab155d7a72",
+      "name": "Demon Heart",
+      "description": "Quite Quintissential for your build [s]{C:purple}+1 joker slot{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": "permanent",
+      "cost": 7,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "force_eternal": true,
+      "force_foil": false,
+      "force_holographic": false,
+      "force_polychrome": false,
+      "force_negative": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "21eca873-90a3-4688-9467-2eca3daece1a",
+          "trigger": "buying_self",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "5b666271-cd2d-427a-a18a-7d15f11a2838",
+              "type": "edit_joker_slots",
+              "params": {
+                "operation": {
+                  "value": "add",
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 801,
+            "y": 296
+          }
+        },
+        {
+          "id": "ddcd75dc-3293-4e0e-801e-b37e12c26ac0",
+          "trigger": "selling_self",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "c2aa9c51-ee86-4db8-954f-860685f02967",
+              "type": "edit_joker_slots",
+              "params": {
+                "operation": {
+                  "value": "subtract",
+                  "valueType": "text"
+                },
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 394,
+            "y": 299
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 19,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 7,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "eyeofthegolem",
+      "id": "50bb14d7-bbb1-477f-8898-9f627af59ad9",
+      "name": "Eye of the Golem",
+      "description": "{C:attention}Doubles{} all probabilities",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 2,
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "f34de30a-37aa-4b50-a835-36df7a071a97",
+          "trigger": "change_probability",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "efe5539a-2621-4ea9-8752-c488fa3beeae",
+              "type": "mod_probability",
+              "params": {
+                "part": {
+                  "value": "numerator",
+                  "valueType": "text"
+                },
+                "operation": {
+                  "value": "multiply",
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 468,
+            "y": 380
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 29,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 8,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "cobaltshield",
+      "id": "84448fca-54fe-42a1-956a-e77c2d1a7a14",
+      "name": "Cobalt Shield",
+      "description": "{X:blue,C:white}x2{} {C:blue}Chips{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "a2af51bb-9237-47c9-8760-bf8a11ff2d00",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "823e04d9-d0c7-4c67-9cf9-a5f2170ecdc5",
+              "type": "apply_x_chips",
+              "params": {
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 5,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 9,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "frozenturtleshell",
+      "id": "c0317101-2263-44cf-b7bc-432701576e82",
+      "name": "Frozen Turtle Shell",
+      "description": "While hands are {C:attention}below or equal to 2{}, grants {C:blue}+50 Chips{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "575f0211-41cc-4755-9089-5efa16efaa0e",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "d2d59610-45d6-42ce-bf3a-98affa8bab4f",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "48a868b9-2a2c-4985-aec1-b9c47a598f6c",
+                  "type": "remaining_hands",
+                  "negate": false,
+                  "params": {
+                    "operator": {
+                      "value": "less_equals",
+                      "valueType": "text"
+                    },
+                    "value": {
+                      "value": 2,
+                      "valueType": "number"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "1d97347f-2076-4b1e-9f4b-3e2df98f0547",
+              "type": "add_chips",
+              "params": {
+                "value": {
+                  "value": 50,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 27,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 10,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "manacrystal",
+      "id": "c820aa56-ac40-414a-98b9-d6a41b40e824",
+      "name": "Mana Crystal",
+      "description": "{C:planet}+20 Mana{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": "permanent",
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "force_eternal": true,
+      "force_foil": false,
+      "force_holographic": false,
+      "force_polychrome": false,
+      "force_negative": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "afc5044d-3450-439b-8dcd-b9299db2143e",
+          "trigger": "after_hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "d5508295-ca9c-45d7-b27b-d88a27536c4f",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "b78df49d-8cdf-45ff-abfc-68561de5f7e2",
+                  "type": "internal_variable",
+                  "negate": false,
+                  "params": {
+                    "variable_name": {
+                      "valueType": "unknown"
+                    },
+                    "operator": {
+                      "value": "less_than",
+                      "valueType": "text"
+                    },
+                    "value": {
+                      "value": "manaLimit",
+                      "valueType": "user_var"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "00fe1c30-de19-4298-ae48-9d0650f38b58",
+              "type": "modify_internal_variable",
+              "params": {
+                "variable_name": {
+                  "value": "mana",
+                  "valueType": "user_var"
+                },
+                "operation": {
+                  "value": "increment",
+                  "valueType": "text"
+                },
+                "index_method": {
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "j_joker",
+                  "valueType": "unknown"
+                },
+                "joker_variable": {
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 5,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        },
+        {
+          "id": "88d1c0f7-3b65-43b3-b43e-189be3cf9d59",
+          "trigger": "buying_self",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "895333d4-466b-4ff2-a20d-5e2f341b4d8b",
+              "type": "modify_internal_variable",
+              "params": {
+                "variable_name": {
+                  "value": "manaLimit",
+                  "valueType": "user_var"
+                },
+                "operation": {
+                  "value": "increment",
+                  "valueType": "text"
+                },
+                "index_method": {
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "j_joker",
+                  "valueType": "unknown"
+                },
+                "joker_variable": {
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 20,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 407,
+            "y": 411
+          }
+        },
+        {
+          "id": "2b595db1-3282-4acb-bd3a-6250a976529b",
+          "trigger": "selling_self",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "db9322c3-d36c-434e-947e-4b9f25295106",
+              "type": "modify_internal_variable",
+              "params": {
+                "variable_name": {
+                  "value": "manaLimit",
+                  "valueType": "user_var"
+                },
+                "operation": {
+                  "value": "decrement",
+                  "valueType": "text"
+                },
+                "index_method": {
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "j_joker",
+                  "valueType": "unknown"
+                },
+                "joker_variable": {
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 20,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 17,
+            "y": 415
+          }
+        }
+      ],
+      "userVariables": [
+        {
+          "id": "b58a6f24-336d-41e5-8504-cf6cf045908d",
+          "name": "mana",
+          "type": "number",
+          "initialValue": 0
+        },
+        {
+          "id": "821c35c4-c7aa-4884-a1a3-46aa191725a6",
+          "name": "manaLimit",
+          "type": "number",
+          "initialValue": 0
+        }
+      ],
+      "placeholderCreditIndex": 53,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 11,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "bandofstarpower",
+      "id": "46a83e89-ba2b-473b-a182-d71ed53da073",
+      "name": "Band of Starpower",
+      "description": "{C:planet}+20 Mana{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "force_eternal": false,
+      "force_foil": false,
+      "force_holographic": false,
+      "force_polychrome": false,
+      "force_negative": false,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "88d1c0f7-3b65-43b3-b43e-189be3cf9d59",
+          "trigger": "buying_self",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "895333d4-466b-4ff2-a20d-5e2f341b4d8b",
+              "type": "modify_internal_variable",
+              "params": {
+                "variable_name": {
+                  "value": "manaLimit",
+                  "valueType": "user_var"
+                },
+                "operation": {
+                  "value": "increment",
+                  "valueType": "text"
+                },
+                "index_method": {
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "j_joker",
+                  "valueType": "unknown"
+                },
+                "joker_variable": {
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 20,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 407,
+            "y": 411
+          }
+        },
+        {
+          "id": "2b595db1-3282-4acb-bd3a-6250a976529b",
+          "trigger": "selling_self",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "db9322c3-d36c-434e-947e-4b9f25295106",
+              "type": "modify_internal_variable",
+              "params": {
+                "variable_name": {
+                  "value": "manaLimit",
+                  "valueType": "user_var"
+                },
+                "operation": {
+                  "value": "decrement",
+                  "valueType": "text"
+                },
+                "index_method": {
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "j_joker",
+                  "valueType": "unknown"
+                },
+                "joker_variable": {
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 20,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 17,
+            "y": 415
+          }
+        }
+      ],
+      "userVariables": [
+        {
+          "id": "b58a6f24-336d-41e5-8504-cf6cf045908d",
+          "name": "mana",
+          "type": "number",
+          "initialValue": 0
+        },
+        {
+          "id": "821c35c4-c7aa-4884-a1a3-46aa191725a6",
+          "name": "manaLimit",
+          "type": "number",
+          "initialValue": 0
+        }
+      ],
+      "placeholderCreditIndex": 53,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 12,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "blizzardinabottle",
+      "id": "0558006d-b3d5-4364-b4c3-ee483c75067d",
+      "name": "Blizzard in a Bottle",
+      "description": "+1 {C:blue}hand{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 2,
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "ad7e5421-5ded-4230-9604-a8d26f3da4d3",
+          "trigger": "passive",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "3170516d-2c55-4bbd-9440-60371709f39c",
+              "type": "edit_hands",
+              "params": {
+                "operation": {
+                  "value": "add",
+                  "valueType": "unknown"
+                },
+                "duration": {
+                  "value": "permanent",
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 1,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 5,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 13,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "shinyredballoon",
+      "id": "65eea56a-2200-422b-adc1-820333dcb811",
+      "name": "Shiny Red Balloon",
+      "description": "Allows 1 card gaps in {C:attention}straights{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 2,
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "3a5c8a5b-d190-4f4b-80be-08a565d1ff2a",
+          "trigger": "passive",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "97c5da36-317a-4f93-be95-76ab751eb0dd",
+              "type": "shortcut",
+              "params": {}
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 298
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 30,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 14,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "sailfishboots",
+      "id": "af1e9f2a-cdec-4105-bd80-3fcafacd3bfa",
+      "name": "Sailfish Boots",
+      "description": "+1 {C:red}discard{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "03b20c94-2019-4fcc-bd94-6a52d20c3c61",
+          "trigger": "passive",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "164f7cb5-e1ef-45ef-985f-cca1f35d46d8",
+              "type": "edit_discards",
+              "params": {
+                "operation": {
+                  "value": "add",
+                  "valueType": "unknown"
+                },
+                "duration": {
+                  "value": "permanent",
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 1,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 47,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 80,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 15,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "starcloak",
+      "id": "bb29960e-d43e-4daf-9325-1a6c4d05b139",
+      "name": "Star Cloak",
+      "description": "Uses {C:planet}30 Mana{} to add {C:red}30 Mult{} and {C:blue}10 Chips{}",
+      "imagePreview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAAC+CAYAAADjhzelAAAGdElEQVR4Xu3csYsdVRTH8V0MNipYLouFgn+AbGUVRCxExGoJNqKQymAhdkqwEuzEIij4JyxWIv4BImLjkj9AiEgIKYUYhaDEfQP7diFv7r3nONeZl3xeO+fcmfeb7/zOmXtnZndni38vPHHp/hYf/s71u0e723r8W3vgK8GBMx92wJlPe44zl/YcZy7ld3Y4znzac5y5tOc4cynPceZT/mTP7qpmkp/jzCT8yW71OPNpz3Hm0p7jzKU8x5lPeT3OfNpznPm01+PMp70eZy7tOc5cyi+wx4nA8P7r17oqd/P4Xtfxv771QWj8Jc37LK5UAWecJeAUrjPgACdkw6fBwAEOcCoK6HFSiGxO4jgcJ4UTcIADHKUqxUAqieNwHOBwnBQDqSSOw3GAw3FSDKSSOA7HWRw4X333ceqYWpNe27vaGjrEmQAMyVUO7uk4wJnuRD1Sq+PAAc6gQPR5HOAABzjTMZAaSalKybY5SXM8oZjRoTTHbsejzAzxwAEOcCoKmMdJIbI5ieNwnBROwAEOcJSqFAOpJI7DcYDDcVIMpJL2Lxw0f/T6ynPfhPYRvYsJDX4SfLj/WSjlixtvhOJv/X28mAnbxRzIqYLAGWcJOIXrDDjACdkwx6nLxXE4zqCAHqd+sTRHKFVKVTMs5wOBAxzgVBRQqlKIbE7iOBwnhRNwgAMcpSrFQCqJ43Ac4HCcFAPdkyKPYKwOJroIGf0D0UXUJX1+NvpfF7fIGfkDwImoNW0scCbUk+NMKGbPoThOT3XLY3OcCbXnOBOK2XMojtNTXY6zVsBd1XSgKVXTabnVX9iKygCcqGKFeD3OhGL2HEqP01NdPY4epwNfStWEoipVE4rZcyilqqe6SpVS1YGvxZWqiItEvzr61keXO0h4NuTlV94OjX/9z6NY/N2jxZyvxRzIqYLAGWdpSY9hACd0zZeDOc6EYkaH4jgcJ8rMEA8c4ACnooDmOIXI5iSOw3FSOAEHOMBRqlIMpJI4DscBDsdJMZBK4jgcBzgcJ8VAKqmn49w8vhc6pl9+/ykU/9LLF0Pxn3/7XijeWlVBLuAoVaGr6TQYOMABTkUBpSqFyP+/5KDHme5EPVLP4wAHOIMC0UdHgQMc4EzHQGokpaogm3mccXGAAxyOU1NAj1NTqH07x+E47bSciwQOcIBTU0CpqinUvr2740TWnqJzM1EQbt/5tV2ZROTeU8+Gsp45eDwUH1mi6L2SDpzQqSsHA2dCMTnOuJgcpwAacICT8iHgAAc4FQX0OClENidxHI6Twgk4wAGOUrVWwDxO6nLYnKTHmVBMpUqpSuEEHOAAR4+jx0ldBcB5OMB59c290Pn/5N3vQ/HRYM1xVLGZ1qqAMy68xyoKUAIHOGsFIi/ZAQc4wGloDzwBWBCJ44yLAxzgDAp4AtBd1aCA2/GGetsa0nPJQXOsOdYcN1yJehw9jh6ndqEoVeMKaY41x5rjOR1kte/Ia73RV3r/+Od27e/9p+3vXL0Uyv/h2m+h+IhDRfqh1UFE17bCj472LD3AKXMEnII+HGeanojjFCBTqsbFAQ5w1gooVUrVoIDmeKIJPc2x5ji1hAAc4ACnYYZGqVKqBgVMABZAMAE4Lg5wgNNQaB4MAQ5wgFNRwFpVCpHNSRyH40yI0/hQzz/9Ymg/Zo4f0pnjEAUnwcBxOx5lZogHDnCAU1PAPE5NofbtHIfjtNNyLhI4wAFOTQGlqqZQ+3aOw3HaaVGq2rSKfLZkNeI2P6zepshZFMfhOFFmzOPUFOM44wpxHI5Tu342bgdOQbaff/wrJOqnh182x/d+r+rJx2LfUY6+Ygwc4AwKAKcAQnQeh+PocQYFgDMOAsfhOIMCepxxELo/OqpUKVVKVeV+T6lSqpSqykWiVBUE0uPocVLzLMABDnAqpWdxH490V+Wuyl2Vu6q1AppjzfGgQLhURZcQej5fs/oDkRXv3vMmFYN5YHPk2FfJhx9eDO0i8iGmyOvCq4OIfqV0Fzihc1cMBk5BHo4zLg5wgJOyIeAABzi1JQc9ToqRjUkch+OkaAIOcICjVJ0pEH2rIEoPx+E4UWaGeOAABzhKlVLVchVYciiopMcZFycMzv6Fg/stRIqhwHkFdoEDiIwCwMmoJmcHOCBIKQCclGySgIOBlALASckmCTgYSCkAnJRskoCDgZQCwEnJJgk4GEgpAJyUbJKAg4GUAv8CxqiP2Vq8xVMAAAAQZGVCRzNCNkNEQTAwRUQxNEM4NDQB0UfXAAAAAElFTkSuQmCC",
+      "overlayImagePreview": "",
+      "rarity": 2,
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "09b06e9c-2b09-4394-be1e-56a2afb4ee26",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "74b9a8a6-bf26-4ae8-86bd-bf8002be9c0b",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "4a259475-956f-4b5c-ae80-791868c423d9",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "unknown"
+                    },
+                    "joker_key": {
+                      "value": "terralat_manacrystal",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  },
+                  "operator": "and"
+                },
+                {
+                  "id": "fcd8f0f1-cf40-4b67-83fb-aeec88654644",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "unknown"
+                    },
+                    "joker_key": {
+                      "value": "terralat_bandofstarpower",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "7ae278c1-b1c0-4bc2-bc2c-10d967857c6e",
+              "type": "add_chips",
+              "params": {
+                "value": {
+                  "value": 10,
+                  "valueType": "number"
+                }
+              }
+            },
+            {
+              "id": "f6998ea7-a412-4623-8cba-0fa9f58bef14",
+              "type": "add_mult",
+              "params": {
+                "value": {
+                  "value": 30,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 10,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 16,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "blackbelt",
+      "id": "b5af4bf1-7809-4317-8a0e-a0add7e81a92",
+      "name": "Black Belt",
+      "description": "#1# in #2# {C:attention}chance{} to {X:blue,C:white}Chips^100{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "79903a60-cbf6-4538-afa3-6dcc93ea4b02",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [],
+          "randomGroups": [
+            {
+              "id": "3abdf7c6-6af7-4cd2-a5e8-77b1de0e9f02",
+              "chance_numerator": {
+                "value": 1,
+                "valueType": "number"
+              },
+              "chance_denominator": {
+                "value": 10,
+                "valueType": "number"
+              },
+              "respect_probability_effects": true,
+              "custom_key": "",
+              "effects": [
+                {
+                  "id": "d49991e4-8c66-418d-b76c-e7b45df1272c",
+                  "type": "apply_exp_chips",
+                  "params": {
+                    "value": {
+                      "value": 100,
+                      "valueType": "number"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "loops": [],
+          "position": {
+            "x": 801,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 40,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 17,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "magmastone",
+      "id": "a27c6ad9-a7dc-4c1b-8632-cca72a22157e",
+      "name": "Magma Stone",
+      "description": "{X:red,C:white}X1.5{} {C:red}Mult{} for each {C:clubs}Clubs{} card",
+      "imagePreview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAAC+CAYAAADjhzelAAAHVElEQVR4Xu2dMYgdRRjH93VXBAxXn3LNQRACaXNoc9VhaWWusFBD2jSxzV1jKQc2BiUQAjYBW9N4NoEQsEgVQp5WGjjryCGIxGyQx5t7zrzfzE5ub29/V//fzO5/fvt93+x3uztp/DsxBzY2Nl7Wnuz96RQNebtpJkgIRVUHg3OOViY4o136bicuON38G+2vBWe0S9/txAWnm3+j/bXgjHbpu5244HTzb7S/FpzRLn23Execbv6N9teCM9ql73bigtPNv9H+WnBGu/TdTlxwuvk32l8Lzild+toLM51OUROYzntlcxM598fKCtK1oht37yLtT0dHSHcVdtGRMWjGUyCiC0gPVXDiTglOgiLBERwaZAKd4AiO4FjjxBmwxol7Y3GciB2CIzhFqUVwBEdwoAPex4FGpWRGHCNOEUaCIziCAx0wVUGjTFWhA4JTYZtdu4l4cHCAcKbzTtbX0Xi7D75EulZ0/c93kfbFo0dIRx8VHkSvitYudAFp91lwBt5yEJz4AhpxTFUzB0xVKKsuFxlxjDjLKfkfheAIjuAAB0xVwCQiMeIYcQgnCxrBERzBAQ6YqoBJRGLEMeIQTkxVthyKOBEcwRGceQdsctbhAY9Ca5ydnR00Ji0+aR/o/PY2m3ftPtJd/xbJXotqd73pzGeqOy448WWn/y4hOAkHjDgUj7jOiJPw0FQlOIEDRhwjTuCANY41TuCAu6o4EO6qEtFTcASnKLkKjuAIDnDAG4DAJCIx4hhxCCcLGsERHMEBDowyVdHoAPybSZ59vpojX6qlC/PWhQtLx2oFe+89RTo67/65J2i8VvTpjy+Q9tT3qgQnvo6CU+GeC7pM/hMZceJuGXESJAmO4OQEGmsc4JYRx4gzc8DiGFwxRGKqMlURThY0giM4ggMcMFUBk4jEiGPEIZyYqrxzXMSJ4AiO4Mw7YMvBlkPggE3OCkA8e+eQhZmP2Iud28Holcombhra9cbPeld+tPdM7apo11tw4vjSC0BwUiHAiBN1R3AEJ3DAiJNqSFrjRN0RHMEJHNi1OI4TYXEc90Zw3I4HDrgdjwOB349jxDHizDsgOIkoa8Qx4gQOeOeY3mMXHMFpGpxdCFZ4MGsca5ygxqFAbG1tERCblcePkS5HRFMLHbOv2oUeX875fnzvHhr2i6MjpKOPCk8E5+QiCVq5VyLBoU4t0eUYSaY04sRdMuKcwm02gbrV5FwopqqEqzlGksUx4hhxCCcLGsERHMFxVxVnwFQV98Yaxxpn5kDOhSI4giM4RYWH4AiO4HRzwFTVzb+iK5BM6Xbc7TjhxPs4rxyo3uSkztNm6JXNTTTk3u/fI12WKOMhPzIufZwFfwUYfk+cftIxpz3x9p075JSbq/D/dqr/P47gxNen9icdBQddC0BkxImaZMRJ8SM4ggPiy6JEcARHcJgD9J6PqcpUFTggOOwCS6tMVaaqIo4ER3AEhzlgqmI+maqOOSA4gjNzwJZDAgZ7VXFzBEdwAgfOVK+Kdr3ps+Nf//IdSjo5VxUa8A2I9j9jg958wD4zjf8PCHbR26OjPv516RI6mb9v3UK66s+OC07cd8FJMCk4ghM4YKqKA2GqSkQSwRGceQescRIXi8VxIu26q4qbIziCg7aYx0WCIziC432cIgaKfmTEMeIIjhGniIGiHxlxjDiC01fEoR9ppU03+g9IOStOe0GHh+xLxfRl37UjE31ZUusNfSY8x0eixTcABefk7vcITgJdI07cHMERnMAB2gwVHMERHGsca5yi7rjgCI7guB0nO+6kxu14wh7v41S4c2yqMlWZqkxVpqrgKlhfR4bYckA2WeMcd0BwBCdwwCZndyDoCHhX9cPz52jMry5eRLqcXhUFYnftPpqbiugLsvfPPUFD3lz7EOno+/rawegLrdHEGSLBSZglOBW240acxHbciBM3R3AEp+g+juAIjuDAItAaxxoHohLKBEdwBKfIAcEpss2IIziCU+SA4BTZZsQRHMEpckBwimwz4lQA54PVVWQ+bV7SxmU76Zt4sTQ6GSiiTc5fH/6DRsx5rPc2/GovmjhDhJucgtP9zrHgJMg04sTNERzBCRwwVSWAMFWZquYdsMbJKAhjUiOOEacII8ERHMGBDpiqoFEpmRHHiFOEkeAIjuBAB0xV0ChTVeiA4AhOkQOCU2Rb+KNR1jjUt2+a5iXR/nztGpE19Nud7WD0pdvnt7fR3L/t7SFdbdFlOGBfj/XCw3stm1Cx4FCn4jrBSXhoxBGcwAEjjhFn3gFTVXce8AimKlMVhmVeKDiCIzjUAWsc6pTFscVxd1aCEUxVpqoipARHcASHOmCNQ52yxrHG6c6KNQ718BPYDKX5vp33IZ0c6vp6bBYe3iBk+M4xPRvBoU4NWyc4w16/3o5ecHqzftgTC86w16+3oxec3qwf9sSCM+z16+3oBac364c9seAMe/16O3rB6c36YU8sOMNev96OXnB6s37YEwvOsNevt6MXnN6sH/bE/wLknlhyWLG3dAAAABBkZUJHNUYwODQzNkI1QjI3NzE0Nie6868AAAAASUVORK5CYII=",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "3bb3ed16-7272-433f-a81c-5ca55f147ded",
+          "trigger": "card_scored",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "f3d8ae47-1ae5-4a2a-abd3-f097cbd3fbca",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "001d8b14-d7c1-4d68-9657-e58e3123c84a",
+                  "type": "card_suit",
+                  "negate": false,
+                  "params": {
+                    "suit_type": {
+                      "value": "specific",
+                      "valueType": "text"
+                    },
+                    "specific_suit": {
+                      "value": "Clubs",
+                      "valueType": "text"
+                    },
+                    "suit_group": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "42270bda-bca0-46d0-a805-97c7a4f163f6",
+              "type": "apply_x_mult",
+              "params": {
+                "value": {
+                  "value": 1.5,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 296
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 30,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 18,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "palladinsshield",
+      "id": "09f2eaa5-263b-445b-bd6f-51d0dc861b90",
+      "name": "Palladins Shield",
+      "description": "{C:attention}+1{} hand level to the most played[s] hand every hand played",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 3,
+      "cost": 9,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "4e4e8c31-58dc-4fb4-aa4a-bc1c2186e53f",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "51d4ca92-a367-4812-b606-e0e00fc00906",
+              "type": "level_up_hand",
+              "params": {
+                "hand_selection": {
+                  "value": "most",
+                  "valueType": "text"
+                },
+                "specific_hand": {
+                  "valueType": "unknown"
+                },
+                "poker_hand_pool": {
+                  "valueType": "checkbox"
+                },
+                "value": {
+                  "value": 1,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 815,
+            "y": 280
+          }
+        }
+      ],
+      "userVariables": [
+        {
+          "id": "5dd98497-0033-43d8-898b-b1dad3c733ec",
+          "name": "palladinJokerCount",
+          "type": "number",
+          "initialValue": 0
+        }
+      ],
+      "placeholderCreditIndex": 7,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 19,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "shackle",
+      "id": "594f475c-698f-4a62-a04f-f52d0077efa8",
+      "name": "Shackle",
+      "description": "{C:blue}+10 Chips{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "e31cae73-58fa-487f-886a-078fc9c61e9d",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "c5ac9a30-5c74-4047-8c3e-1481c68da4ab",
+              "type": "add_chips",
+              "params": {
+                "value": {
+                  "value": 10,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 60,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 20,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "sharktoothnecklace",
+      "id": "3f265272-dcf0-4a0a-b17f-3f5d80df35c7",
+      "name": "Shark Tooth Necklace",
+      "description": "{X:red,C:white}x5{} {C:red}Mult{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 2,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "981cfea6-c20a-43b7-aca9-c83f8056b29e",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "cb034aa8-59a5-4b25-b0a1-b69644577f2b",
+              "type": "apply_x_mult",
+              "params": {
+                "value": {
+                  "value": 5,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 2,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 21,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "panicnecklace",
+      "id": "0e5013fe-3b4c-4256-b320-49157213082e",
+      "name": "Panic Necklace",
+      "description": "{C:red}+2 discards{} on triggering the boss blind's ability",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "0d1d9559-9247-4d89-bdf1-65cb92d94a01",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "8492a547-467d-400d-99e8-8c88e76c2aa1",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "ad2fb41e-28eb-497d-b802-fd09eafe0c09",
+                  "type": "triggered_boss_blind",
+                  "negate": false,
+                  "params": {}
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "960a540e-5b38-43b8-849f-9cf08116da15",
+              "type": "edit_discards",
+              "params": {
+                "operation": {
+                  "value": "add",
+                  "valueType": "unknown"
+                },
+                "duration": {
+                  "value": "round",
+                  "valueType": "text"
+                },
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 28,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 22,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "pygmynecklace",
+      "id": "ca45bb86-0bc8-457c-83fe-addc79aae7c0",
+      "name": "Pygmy Necklace",
+      "description": "{C:attention}+1{} hand size",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "292195a1-4466-4aaf-9054-adf2999c8065",
+          "trigger": "passive",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "652971ba-764b-4b63-a416-db3110149938",
+              "type": "edit_hand_size",
+              "params": {
+                "operation": {
+                  "value": "add",
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 1,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 33,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 23,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "necromaticscroll",
+      "id": "3ef33ee0-f8bf-4b98-a582-a4ea9b4935c9",
+      "name": "Necromatic Scroll",
+      "description": "{C:attention}+2{} temporary hand size each hand for {C:planet}10 mana{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "fa104eff-bb6f-408a-bf94-f2ddd5e03b33",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [
+            {
+              "id": "91040c95-43bd-461e-948a-8901026a23fb",
+              "operator": "and",
+              "conditions": [
+                {
+                  "id": "b11b87d2-1732-4c62-aab5-90517fdbcb38",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "unknown"
+                    },
+                    "joker_key": {
+                      "value": "terralat_manacrystal",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  },
+                  "operator": "or"
+                },
+                {
+                  "id": "29aa908c-595d-40e4-930f-b7d9b8c38dcc",
+                  "type": "specific_joker",
+                  "negate": false,
+                  "params": {
+                    "type": {
+                      "value": "key",
+                      "valueType": "unknown"
+                    },
+                    "joker_key": {
+                      "value": "terralat_bandofstarpower",
+                      "valueType": "text"
+                    },
+                    "key_variable": {
+                      "valueType": "unknown"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "id": "ea37b30e-0a44-4a42-ab05-d9030082e37b",
+              "type": "modify_internal_variable",
+              "params": {
+                "variable_name": {
+                  "value": "handSizeBefore",
+                  "valueType": "user_var"
+                },
+                "operation": {
+                  "value": "set",
+                  "valueType": "text"
+                },
+                "index_method": {
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "j_joker",
+                  "valueType": "unknown"
+                },
+                "joker_variable": {
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": "GAMEVAR:current_hand_size|1|0",
+                  "valueType": "game_var"
+                }
+              }
+            },
+            {
+              "id": "9015d1b8-6b90-4797-8576-5f0ce7a4c876",
+              "type": "edit_hand_size",
+              "params": {
+                "operation": {
+                  "value": "add",
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 2,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 992,
+            "y": 340
+          }
+        },
+        {
+          "id": "8b51fbcf-b0fe-4f0c-b5cf-ca4ac830fb1c",
+          "trigger": "round_end",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "e02584e3-b0b6-4a14-9916-fb2fda4f8eb1",
+              "type": "edit_hand_size",
+              "params": {
+                "operation": {
+                  "value": "set",
+                  "valueType": "text"
+                },
+                "value": {
+                  "value": "handSizeBefore",
+                  "valueType": "user_var"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 607,
+            "y": 364
+          }
+        }
+      ],
+      "userVariables": [
+        {
+          "id": "c3095101-1d71-40d0-b370-8e5ba6775077",
+          "name": "handSizeBefore",
+          "type": "number",
+          "initialValue": 0
+        }
+      ],
+      "placeholderCreditIndex": 33,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 24,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "papyrusscarab",
+      "id": "7e08af19-c15f-41eb-bf23-9c16aaee81c7",
+      "name": "Papyrus Scarab",
+      "description": "{C:attention}+1{} hand size",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": 1,
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "292195a1-4466-4aaf-9054-adf2999c8065",
+          "trigger": "passive",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "652971ba-764b-4b63-a416-db3110149938",
+              "type": "edit_hand_size",
+              "params": {
+                "operation": {
+                  "value": "add",
+                  "valueType": "unknown"
+                },
+                "value": {
+                  "value": 1,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 33,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 25,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "lifecrystal",
+      "id": "cf14bf4e-aef8-4040-a0fd-3a5674caca23",
+      "name": "Life Crystal",
+      "description": "{C:blue}+20 Chips{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": "permanent",
+      "cost": 5,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "force_eternal": true,
+      "force_foil": false,
+      "force_holographic": false,
+      "force_polychrome": false,
+      "force_negative": true,
+      "appears_in_shop": true,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "16c941bb-160d-4d77-8d28-c5e4287ef112",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "2a5f2b77-4b55-477f-b1ad-7fa665820826",
+              "type": "add_chips",
+              "params": {
+                "value": {
+                  "value": 20,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 8,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 26,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    },
+    {
+      "objectKey": "platinumset",
+      "id": "326ed0f3-4b3a-4639-9514-032a3d0a3794",
+      "name": "Platinum Set",
+      "description": "{C:blue}+50 Chips{}",
+      "imagePreview": "data:image/png;base64,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",
+      "overlayImagePreview": "",
+      "rarity": "armor",
+      "cost": 4,
+      "blueprint_compat": true,
+      "eternal_compat": true,
+      "unlocked": true,
+      "discovered": true,
+      "force_foil": false,
+      "force_holographic": false,
+      "force_polychrome": false,
+      "force_negative": false,
+      "appears_in_shop": false,
+      "unlockProperties": [],
+      "unlockOperator": "",
+      "unlockCount": 1,
+      "unlockDescription": "Unlocked by default.",
+      "rules": [
+        {
+          "id": "4aded1fc-fbfc-4054-89e7-0c2ff0447b92",
+          "trigger": "hand_played",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "1a97e110-fec3-4710-a440-a20ae7477808",
+              "type": "add_chips",
+              "params": {
+                "value": {
+                  "value": 50,
+                  "valueType": "number"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "userVariables": [],
+      "placeholderCreditIndex": 34,
+      "hasUserUploadedImage": true,
+      "cardAppearance": {
+        "buf": true,
+        "jud": true,
+        "rif": true,
+        "rta": true,
+        "sou": true,
+        "uta": true,
+        "wra": true
+      },
+      "appearFlags": "",
+      "ignoreSlotLimit": false,
+      "scale_h": 100,
+      "scale_w": 100,
+      "pools": [
+        "terralat_jokers"
+      ],
+      "orderValue": 27,
+      "objectType": "joker",
+      "info_queues": [],
+      "card_dependencies": []
+    }
+  ],
+  "sounds": [],
+  "consumables": [],
+  "customRarities": [
+    {
+      "id": "c35605a3-aaf4-4112-ae55-f74946d088f7",
+      "key": "recipes",
+      "name": "Recipes",
+      "badge_colour": "102842",
+      "default_weight": 0.512
+    },
+    {
+      "id": "403f14a7-be65-4453-bf57-3f67569ae03b",
+      "key": "permanent",
+      "name": "Permanent",
+      "badge_colour": "9013fe",
+      "default_weight": 0.2
+    },
+    {
+      "id": "b90470c1-eb16-4b75-ae46-545e0f3a2009",
+      "key": "armor",
+      "name": "Armor",
+      "badge_colour": "b8e986",
+      "default_weight": 0.1
+    }
+  ],
+  "consumableSets": [],
+  "boosters": [],
+  "enhancements": [],
+  "seals": [],
+  "editions": [],
+  "vouchers": [],
+  "decks": [
+    {
+      "objectKey": "platinum_armor",
+      "objectType": "deck",
+      "id": "73f87c2f-a06e-44e2-8791-d1bc0ed709ae",
+      "name": "Platinum Armor",
+      "description": "{C:blue}+50 Chips{}",
+      "imagePreview": "data:image/png;base64,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",
+      "unlocked": true,
+      "discovered": true,
+      "no_collection": false,
+      "no_interest": false,
+      "no_faces": false,
+      "erratic_deck": false,
+      "rules": [
+        {
+          "id": "e79d453a-d5d5-4b3a-a7f3-e2d9837754b2",
+          "trigger": "card_used",
+          "blueprintCompatible": true,
+          "conditionGroups": [],
+          "effects": [
+            {
+              "id": "bde64c2a-ca86-4110-ae33-b88ed445de6c",
+              "type": "create_joker",
+              "params": {
+                "joker_type": {
+                  "value": "specific",
+                  "valueType": "text"
+                },
+                "rarity": {
+                  "value": "random",
+                  "valueType": "unknown"
+                },
+                "joker_key": {
+                  "value": "terralat_platinumset",
+                  "valueType": "text"
+                },
+                "pool": {
+                  "value": "",
+                  "valueType": "unknown"
+                },
+                "edition": {
+                  "value": "negative",
+                  "valueType": "text"
+                },
+                "sticker": {
+                  "value": "eternal",
+                  "valueType": "text"
+                },
+                "ignore_slots": {
+                  "value": "respect",
+                  "valueType": "unknown"
+                }
+              }
+            }
+          ],
+          "randomGroups": [],
+          "loops": [],
+          "position": {
+            "x": 800,
+            "y": 297
+          }
+        }
+      ],
+      "placeholderCreditIndex": 17,
+      "hasUserUploadedImage": true,
+      "Config_vouchers": [],
+      "Config_consumables": [],
+      "orderValue": 1
+    }
+  ],
+  "version": "1.0.0",
+  "exportedAt": "2026-06-10T13:48:57.591Z"
+}

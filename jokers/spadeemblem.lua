@@ -3,13 +3,13 @@ SMODS.Joker{ --Spade Emblem
     key = "spadeemblem",
     config = {
         extra = {
-            xmult0 = 2
+            mult0 = 2
         }
     },
     loc_txt = {
         ['name'] = 'Spade Emblem',
         ['text'] = {
-            [1] = '{X:red,C:white}X2{} {C:red}Mult{} every {C:spades}Spade{} card scored'
+            [1] = '{C:red}+2 Mult{} every {C:spades}Spade{} card scored'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -37,7 +37,7 @@ SMODS.Joker{ --Spade Emblem
         if context.individual and context.cardarea == G.play  then
             if context.other_card:is_suit("Spades") then
                 return {
-                    Xmult = 2
+                    mult = 2
                 }
             end
         end

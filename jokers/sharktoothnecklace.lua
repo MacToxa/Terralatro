@@ -3,7 +3,7 @@ SMODS.Joker{ --Shark Tooth Necklace
     key = "sharktoothnecklace",
     config = {
         extra = {
-            mult0 = 5
+            xmult0 = 5
         }
     },
     loc_txt = {
@@ -24,7 +24,7 @@ SMODS.Joker{ --Shark Tooth Necklace
         h = 95 * 1
     },
     cost = 4,
-    rarity = 1,
+    rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -36,7 +36,7 @@ SMODS.Joker{ --Shark Tooth Necklace
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             return {
-                mult = 5
+                Xmult = 5
             }
         end
     end

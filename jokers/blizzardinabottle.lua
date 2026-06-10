@@ -3,8 +3,7 @@ SMODS.Joker{ --Blizzard in a Bottle
     key = "blizzardinabottle",
     config = {
         extra = {
-            hands0 = 1,
-            hands = 1
+            hands_change = '1'
         }
     },
     loc_txt = {
@@ -35,31 +34,13 @@ SMODS.Joker{ --Blizzard in a Bottle
     pools = { ["terralat_terralat_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.selling_self  then
-            return {
-                
-                func = function()
-                    card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "-"..tostring(1).." Hands", colour = G.C.RED})
-                    
-                    G.GAME.round_resets.hands = G.GAME.round_resets.hands - 1
-                    ease_hands_played(-1)
-                    
-                    return true
-                end
-            }
-        end
-        if context.buying_card and context.card.config.center.key == self.key and context.cardarea == G.jokers  then
-            return {
-                
-                func = function()
-                    card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "+"..tostring(1).." Hands", colour = G.C.GREEN})
-                    
-                    G.GAME.round_resets.hands = G.GAME.round_resets.hands + 1
-                    ease_hands_played(1)
-                    
-                    return true
-                end
-            }
-        end
+    end,
+    
+    add_to_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands + 1
+    end,
+    
+    remove_from_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands - 1
     end
 }

@@ -3,13 +3,13 @@ SMODS.Joker{ --Club Emblem
     key = "clubemblem",
     config = {
         extra = {
-            xmult0 = 2
+            mult0 = 2
         }
     },
     loc_txt = {
         ['name'] = 'Club Emblem',
         ['text'] = {
-            [1] = '{X:red,C:white}X2{} {C:red}Mult{} every {C:clubs}Club{} card scored'
+            [1] = '{C:red}+2 Mult{} every {C:clubs}Club{} card scored'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -37,7 +37,7 @@ SMODS.Joker{ --Club Emblem
         if context.individual and context.cardarea == G.play  then
             if context.other_card:is_suit("Clubs") then
                 return {
-                    Xmult = 2
+                    mult = 2
                 }
             end
         end

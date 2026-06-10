@@ -3,13 +3,13 @@ SMODS.Joker{ --Platinum Set
     key = "platinumset",
     config = {
         extra = {
-            chips0 = 200
+            chips0 = 50
         }
     },
     loc_txt = {
         ['name'] = 'Platinum Set',
         ['text'] = {
-            [1] = '{C:blue}+200 Chips{}'
+            [1] = '{C:blue}+50 Chips{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -44,7 +44,7 @@ SMODS.Joker{ --Platinum Set
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
             return {
-                chips = 200
+                chips = 50
             }
         end
     end

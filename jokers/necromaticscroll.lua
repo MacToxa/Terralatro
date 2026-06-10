@@ -3,14 +3,15 @@ SMODS.Joker{ --Necromatic Scroll
     key = "necromaticscroll",
     config = {
         extra = {
-            hand_size0 = 2,
-            hand_size = 2
+            handSizeBefore = 0,
+            currenthandsize = 0,
+            hand_size0 = 2
         }
     },
     loc_txt = {
         ['name'] = 'Necromatic Scroll',
         ['text'] = {
-            [1] = '{C:attention}+2{} hand size for {C:planet}10 mana{}'
+            [1] = '{C:attention}+2{} temporary hand size each hand for {C:planet}10 mana{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -34,8 +35,13 @@ SMODS.Joker{ --Necromatic Scroll
     atlas = 'CustomJokers',
     pools = { ["terralat_terralat_jokers"] = true },
     
+    loc_vars = function(self, info_queue, card)
+        
+        return {vars = {card.ability.extra.handSizeBefore, ((G.hand and G.hand.config.card_limit or 0) or 0)}}
+    end,
+    
     calculate = function(self, card, context)
-        if context.setting_blind  then
+        if context.cardarea == G.jokers and context.joker_main  then
             if ((function()
                 for i, v in pairs(G.jokers.cards) do
                     if v.config.center.key == "j_terralat_manacrystal" then 
@@ -49,6 +55,7 @@ SMODS.Joker{ --Necromatic Scroll
                     end
                 end
             end)()) then
+                card.ability.extra.handSizeBefore = (G.hand and G.hand.config.card_limit or 0)
                 return {
                     
                     func = function()
@@ -60,13 +67,16 @@ SMODS.Joker{ --Necromatic Scroll
                 }
             end
         end
-        if context.starting_shop  then
+        if context.end_of_round and context.game_over == false and context.main_eval  then
             return {
                 
                 func = function()
-                    card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "-"..tostring(2).." Hand Limit", colour = G.C.BLUE})
+                    card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "Hand Limit set to "..tostring(card.ability.extra.handSizeBefore), colour = G.C.BLUE})
                     
-                    G.hand:change_size(-2)
+                    local current_hand_size = (G.hand.config.card_limit or 0)
+                    local target_hand_size = card.ability.extra.handSizeBefore
+                    local difference = target_hand_size - current_hand_size
+                    G.hand:change_size(difference)
                     return true
                 end
             }

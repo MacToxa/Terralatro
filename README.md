@@ -22,7 +22,15 @@ A mod that adds Terraria items into Balatro
 - ✅ Demon Heart
 > +1 joker slot
 ### Craftable jokers (do not appear in shop/packs)
-- ❌ Spectre Boots
+- ❌ Lightning Boots
+> +10 chips for each remaining discard
+>
+> +2 hands
+>
+> +3 discards
+>> Spectre Boots + Sailfish Boots + Anglet + Ice Skates
+
+- ✅ (pending) Spectre Boots
 > +10 chips for each remaining discard
 > 
 > +1 discard
@@ -118,6 +126,31 @@ A mod that adds Terraria items into Balatro
 
 - ✅ Necromatic Scroll
 > +2 temporary hand size each hand for 10 mana
+
+- ✅ (pending) Discount Card
+> 20% discount on shop items
+
+- ✅ (pending) Adhesive Bandage
+> 1 in 6 chance per card played to create a random seal for that card
+
+- ✅ (pending) Celestial Magnet
+> Planet cards and packs are free
+
+- ✅ (pending) Feral Claws
+> +2 Mult for each joker you have
+
+- ✅ (pending) Treasure Magnet
+> +1 to shop item and booster slots
+
+- ✅ (pending) Tally Counter
+> +1 Mult every scoring hand
+
+- ✅ (pending) Aglet
+> +1 discard
+
+- ✅ (pending) Rocket Boots
+> +10 Chips for each discard left
+
 ### Consumables (Tarot)
 - ❌ Ironskin Potion
 > Gain +30 chips this blind

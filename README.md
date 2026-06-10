@@ -15,9 +15,9 @@ A mod that adds Terraria items into Balatro
 > +20 mana
 - ✅ Heart Crystal
 > +20 chips
-- ✅ (pending) Aegis Fruit
+- ✅ (0.2+) Aegis Fruit
 > x2 chips
-- ✅ (pending) Ambrosia
+- ✅ (0.2+) Ambrosia
 > Gain $1 at end of round
 - ✅ Demon Heart
 > +1 joker slot
@@ -30,7 +30,7 @@ A mod that adds Terraria items into Balatro
 > +3 discards
 >> Spectre Boots + Sailfish Boots + Anglet + Ice Skates
 
-- ✅ (pending) Spectre Boots
+- ✅ (0.2+) Spectre Boots
 > +10 chips for each remaining discard
 > 
 > +1 discard
@@ -45,23 +45,23 @@ A mod that adds Terraria items into Balatro
 > +1 discard
 >> All suit emblems
 ### Jokers (Else)
-- ✅ (pending) Band of Regeneration
+- ✅ (0.2+) Band of Regeneration
 > +2 mult
 >> Gains +2 mult every 3 hands
 
-- ✅ (pending) Cloud in a Bottle
+- ✅ (0.2+) Cloud in a Bottle
 > +1 hand
 
 - ✅ Blizzard in a Bottle
 > +1 hand
 
-- ✅ (pending) Hermes Boots
+- ✅ (0.2+) Hermes Boots
 > +1 discard
 
 - ✅ Sailfish Boots
 > +1 discard
 
-- ✅ (pending) Ankh Shield
+- ✅ (0.2+) Ankh Shield
 > Disables boss blinds
 
 - ✅ Shark Tooth Necklace
@@ -127,28 +127,28 @@ A mod that adds Terraria items into Balatro
 - ✅ Necromatic Scroll
 > +2 temporary hand size each hand for 10 mana
 
-- ✅ (pending) Discount Card
+- ✅ (0.2+) Discount Card
 > 20% discount on shop items
 
-- ✅ (pending) Adhesive Bandage
+- ✅ (0.2+) Adhesive Bandage
 > 1 in 6 chance per card played to create a random seal for that card
 
-- ✅ (pending) Celestial Magnet
+- ✅ (0.2+) Celestial Magnet
 > Planet cards and packs are free
 
-- ✅ (pending) Feral Claws
+- ✅ (0.2+) Feral Claws
 > +2 Mult for each joker you have
 
-- ✅ (pending) Treasure Magnet
+- ✅ (0.2+) Treasure Magnet
 > +1 to shop item and booster slots
 
-- ✅ (pending) Tally Counter
+- ✅ (0.2+) Tally Counter
 > +1 Mult every scoring hand
 
-- ✅ (pending) Aglet
+- ✅ (0.2+) Aglet
 > +1 discard
 
-- ✅ (pending) Rocket Boots
+- ✅ (0.2+) Rocket Boots
 > +10 Chips for each discard left
 
 ### Consumables (Tarot)

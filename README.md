@@ -9,6 +9,20 @@ A mod that adds Terraria items into Balatro
 - Armor sets -> decks (Addon content: [Terralatro-Decks](https://github.com/MacToxa/Terralatro-Decks))
 - HP and taking damage related things -> chips
 - Damage -> mult
+## Planned updates
+- ✅ 0.1
+> Initial release
+
+- ✅ 0.2 (Movement Expansion)
+> A lot of movement related accessories, and also a few economy related ones
+
+- ❌ 0.3 (Excavation Update)
+> Ore seals that are currently planned
+
+- ❌ 0.4 (Drink & Play)
+> A lot of potions as tarots
+>
+> An option to disable vanilla jokers, vouchers, and tarots (will be on by default)
 ## Planned features
 ### Jokers (Permanent buffs) -> negative jokers
 - ✅ Mana Crystal

@@ -1,28 +1,28 @@
 
-SMODS.Joker{ --Band of Starpower
-    key = "bandofstarpower",
+SMODS.Joker{ --Tally Counter
+    key = "tallycounter",
     config = {
         extra = {
-            mana = 0,
-            manaLimit = 0
+            currentMult = 0
         }
     },
     loc_txt = {
-        ['name'] = 'Band of Starpower',
+        ['name'] = 'Tally Counter',
         ['text'] = {
-            [1] = '{C:planet}+20 Mana{}'
+            [1] = '{C:red}+1 Mult{} every scoring hand',
+            [2] = 'Current {C:red}Mult{} bonus: #1#'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 2,
-        y = 1
+        x = 9,
+        y = 3
     },
     display_size = {
         w = 71 * 1, 
-        h = 95 * 0.8
+        h = 95 * 1
     },
     cost = 4,
     rarity = 1,
@@ -36,24 +36,21 @@ SMODS.Joker{ --Band of Starpower
     
     loc_vars = function(self, info_queue, card)
         
-        return {vars = {card.ability.extra.mana, card.ability.extra.manaLimit}}
+        return {vars = {card.ability.extra.currentMult}}
     end,
     
     calculate = function(self, card, context)
-        if context.buying_card and context.card.config.center.key == self.key and context.cardarea == G.jokers  then
+        if context.after and context.cardarea == G.jokers  then
             return {
                 func = function()
-                    card.ability.extra.manaLimit = (card.ability.extra.manaLimit) + 20
+                    card.ability.extra.currentMult = (card.ability.extra.currentMult) + 1
                     return true
                 end
             }
         end
-        if context.selling_self  then
+        if context.cardarea == G.jokers and context.joker_main  then
             return {
-                func = function()
-                    card.ability.extra.manaLimit = math.max(0, (card.ability.extra.manaLimit) - 20)
-                    return true
-                end
+                mult = card.ability.extra.currentMult
             }
         end
     end

@@ -1,26 +1,27 @@
 
-SMODS.Joker{ --Magma Stone
-    key = "magmastone",
+SMODS.Joker{ --Rocket Boots
+    key = "rocketboots",
     config = {
         extra = {
-            xmult0 = 1.5
+            repetitions = 1,
+            chips0 = 10
         }
     },
     loc_txt = {
-        ['name'] = 'Magma Stone',
+        ['name'] = 'Rocket Boots',
         ['text'] = {
-            [1] = '{X:red,C:white}X1.5{} {C:red}Mult{} for each {C:clubs}Clubs{} card'
+            [1] = '{C:blue}+10 Chips{} for each {C:red}discard{} left'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 3,
+        y = 4
     },
     display_size = {
-        w = 71 * 1, 
+        w = 71 * 1.2, 
         h = 95 * 1
     },
     cost = 4,
@@ -34,11 +35,11 @@ SMODS.Joker{ --Magma Stone
     pools = { ["terralat_terralat_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
-            if context.other_card:is_suit("Clubs") then
-                return {
-                    Xmult = 1.5
-                }
+        if context.cardarea == G.jokers and context.joker_main  then
+            if true then
+                for i = 1, card.ability.extra.repetitions do
+                    SMODS.calculate_effect({chips = 10}, card)
+                end
             end
         end
     end

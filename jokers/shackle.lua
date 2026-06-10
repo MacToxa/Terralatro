@@ -16,8 +16,8 @@ SMODS.Joker{ --Shackle
         }
     },
     pos = {
-        x = 9,
-        y = 1
+        x = 2,
+        y = 2
     },
     display_size = {
         w = 71 * 1, 

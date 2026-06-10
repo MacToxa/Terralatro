@@ -1,30 +1,30 @@
 
-SMODS.Joker{ --Magma Stone
-    key = "magmastone",
+SMODS.Joker{ --Cloud in a Bottle
+    key = "cloudinabottle",
     config = {
         extra = {
-            xmult0 = 1.5
+            hands_change = '1'
         }
     },
     loc_txt = {
-        ['name'] = 'Magma Stone',
+        ['name'] = 'Cloud in a Bottle',
         ['text'] = {
-            [1] = '{X:red,C:white}X1.5{} {C:red}Mult{} for each {C:clubs}Clubs{} card'
+            [1] = '+1 {C:blue}hand{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 4,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 4,
-    rarity = 1,
+    cost = 5,
+    rarity = 2,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -34,12 +34,13 @@ SMODS.Joker{ --Magma Stone
     pools = { ["terralat_terralat_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
-            if context.other_card:is_suit("Clubs") then
-                return {
-                    Xmult = 1.5
-                }
-            end
-        end
+    end,
+    
+    add_to_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands + 1
+    end,
+    
+    remove_from_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands - 1
     end
 }

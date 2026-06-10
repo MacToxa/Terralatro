@@ -53,6 +53,7 @@ if true then
     assert(SMODS.load_file("jokers/diamondemblem.lua"))()
     assert(SMODS.load_file("jokers/clubemblem.lua"))()
     assert(SMODS.load_file("jokers/avengeremblemrecipe.lua"))()
+    assert(SMODS.load_file("jokers/spectrebootsrecipe.lua"))()
     assert(SMODS.load_file("jokers/demonheart.lua"))()
     assert(SMODS.load_file("jokers/eyeofthegolem.lua"))()
     assert(SMODS.load_file("jokers/cobaltshield.lua"))()
@@ -60,8 +61,10 @@ if true then
     assert(SMODS.load_file("jokers/manacrystal.lua"))()
     assert(SMODS.load_file("jokers/bandofstarpower.lua"))()
     assert(SMODS.load_file("jokers/blizzardinabottle.lua"))()
+    assert(SMODS.load_file("jokers/cloudinabottle.lua"))()
     assert(SMODS.load_file("jokers/shinyredballoon.lua"))()
     assert(SMODS.load_file("jokers/sailfishboots.lua"))()
+    assert(SMODS.load_file("jokers/hermesboots.lua"))()
     assert(SMODS.load_file("jokers/starcloak.lua"))()
     assert(SMODS.load_file("jokers/blackbelt.lua"))()
     assert(SMODS.load_file("jokers/magmastone.lua"))()
@@ -73,7 +76,21 @@ if true then
     assert(SMODS.load_file("jokers/necromaticscroll.lua"))()
     assert(SMODS.load_file("jokers/papyrusscarab.lua"))()
     assert(SMODS.load_file("jokers/lifecrystal.lua"))()
+    assert(SMODS.load_file("jokers/aegisfruit.lua"))()
+    assert(SMODS.load_file("jokers/ambrosia.lua"))()
     assert(SMODS.load_file("jokers/platinumset.lua"))()
+    assert(SMODS.load_file("jokers/bandofregeneration.lua"))()
+    assert(SMODS.load_file("jokers/ankhshield.lua"))()
+    assert(SMODS.load_file("jokers/discountcard.lua"))()
+    assert(SMODS.load_file("jokers/adhesivebandage.lua"))()
+    assert(SMODS.load_file("jokers/celestialmagnet.lua"))()
+    assert(SMODS.load_file("jokers/feralclaws.lua"))()
+    assert(SMODS.load_file("jokers/treasuremagnet.lua"))()
+    assert(SMODS.load_file("jokers/tallycounter.lua"))()
+    assert(SMODS.load_file("jokers/aglet.lua"))()
+    assert(SMODS.load_file("jokers/iceskates.lua"))()
+    assert(SMODS.load_file("jokers/spectreboots.lua"))()
+    assert(SMODS.load_file("jokers/rocketboots.lua"))()
 end
 -- load the decks
 if true then
@@ -119,6 +136,7 @@ SMODS.ObjectType({
         ["j_terralat_diamondemblem"] = true,
         ["j_terralat_clubemblem"] = true,
         ["j_terralat_avengeremblemrecipe"] = true,
+        ["j_terralat_spectrebootsrecipe"] = true,
         ["j_terralat_demonheart"] = true,
         ["j_terralat_eyeofthegolem"] = true,
         ["j_terralat_cobaltshield"] = true,
@@ -126,8 +144,10 @@ SMODS.ObjectType({
         ["j_terralat_manacrystal"] = true,
         ["j_terralat_bandofstarpower"] = true,
         ["j_terralat_blizzardinabottle"] = true,
+        ["j_terralat_cloudinabottle"] = true,
         ["j_terralat_shinyredballoon"] = true,
         ["j_terralat_sailfishboots"] = true,
+        ["j_terralat_hermesboots"] = true,
         ["j_terralat_starcloak"] = true,
         ["j_terralat_blackbelt"] = true,
         ["j_terralat_magmastone"] = true,
@@ -139,7 +159,21 @@ SMODS.ObjectType({
         ["j_terralat_necromaticscroll"] = true,
         ["j_terralat_papyrusscarab"] = true,
         ["j_terralat_lifecrystal"] = true,
-        ["j_terralat_platinumset"] = true
+        ["j_terralat_aegisfruit"] = true,
+        ["j_terralat_ambrosia"] = true,
+        ["j_terralat_platinumset"] = true,
+        ["j_terralat_bandofregeneration"] = true,
+        ["j_terralat_ankhshield"] = true,
+        ["j_terralat_discountcard"] = true,
+        ["j_terralat_adhesivebandage"] = true,
+        ["j_terralat_celestialmagnet"] = true,
+        ["j_terralat_feralclaws"] = true,
+        ["j_terralat_treasuremagnet"] = true,
+        ["j_terralat_tallycounter"] = true,
+        ["j_terralat_aglet"] = true,
+        ["j_terralat_iceskates"] = true,
+        ["j_terralat_spectreboots"] = true,
+        ["j_terralat_rocketboots"] = true
     },
 })
 

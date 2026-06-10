@@ -1,23 +1,24 @@
 
-SMODS.Joker{ --Magma Stone
-    key = "magmastone",
+SMODS.Joker{ --Feral Claws
+    key = "feralclaws",
     config = {
         extra = {
-            xmult0 = 1.5
+            repetitions = 1,
+            mult0 = 2
         }
     },
     loc_txt = {
-        ['name'] = 'Magma Stone',
+        ['name'] = 'Feral Claws',
         ['text'] = {
-            [1] = '{X:red,C:white}X1.5{} {C:red}Mult{} for each {C:clubs}Clubs{} card'
+            [1] = '{C:red}+2 Mult{} for every joker you have'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 7,
+        y = 3
     },
     display_size = {
         w = 71 * 1, 
@@ -34,11 +35,11 @@ SMODS.Joker{ --Magma Stone
     pools = { ["terralat_terralat_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
-            if context.other_card:is_suit("Clubs") then
-                return {
-                    Xmult = 1.5
-                }
+        if context.cardarea == G.jokers and context.joker_main  then
+            if true then
+                for i = 1, card.ability.extra.repetitions do
+                    SMODS.calculate_effect({mult = 2}, card)
+                end
             end
         end
     end

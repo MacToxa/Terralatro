@@ -1,27 +1,28 @@
 
-SMODS.Joker{ --Blizzard in a Bottle
-    key = "blizzardinabottle",
+SMODS.Joker{ --Ice Skates
+    key = "iceskates",
     config = {
         extra = {
-            hands_change = '1'
+            hands_change = '2',
+            discards_change = '0'
         }
     },
     loc_txt = {
-        ['name'] = 'Blizzard in a Bottle',
+        ['name'] = 'Ice Skates',
         ['text'] = {
-            [1] = '+1 {C:blue}hand{}'
+            [1] = '{C:blue}+2 hands{}, but no {C:red}discards{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 3,
-        y = 1
+        x = 1,
+        y = 4
     },
     display_size = {
         w = 71 * 1, 
-        h = 95 * 1
+        h = 95 * 0.8
     },
     cost = 5,
     rarity = 2,
@@ -37,10 +38,15 @@ SMODS.Joker{ --Blizzard in a Bottle
     end,
     
     add_to_deck = function(self, card, from_debuff)
-        G.GAME.round_resets.hands = G.GAME.round_resets.hands + 1
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands + 2
+        card.ability.extra.original_discards = G.GAME.round_resets.discards
+        G.GAME.round_resets.discards = 0
     end,
     
     remove_from_deck = function(self, card, from_debuff)
-        G.GAME.round_resets.hands = G.GAME.round_resets.hands - 1
+        G.GAME.round_resets.hands = G.GAME.round_resets.hands - 2
+        if card.ability.extra.original_discards then
+            G.GAME.round_resets.discards = card.ability.extra.original_discards
+        end
     end
 }

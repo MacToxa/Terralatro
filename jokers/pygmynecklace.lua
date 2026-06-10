@@ -16,7 +16,7 @@ SMODS.Joker{ --Pygmy Necklace
         }
     },
     pos = {
-        x = 2,
+        x = 5,
         y = 2
     },
     display_size = {

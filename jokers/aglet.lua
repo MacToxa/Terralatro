@@ -1,15 +1,15 @@
 
-SMODS.Joker{ --Magma Stone
-    key = "magmastone",
+SMODS.Joker{ --Aglet
+    key = "aglet",
     config = {
         extra = {
-            xmult0 = 1.5
+            discards_change = '1'
         }
     },
     loc_txt = {
-        ['name'] = 'Magma Stone',
+        ['name'] = 'Aglet',
         ['text'] = {
-            [1] = '{X:red,C:white}X1.5{} {C:red}Mult{} for each {C:clubs}Clubs{} card'
+            [1] = '{C:red}+1 discard {}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -17,11 +17,11 @@ SMODS.Joker{ --Magma Stone
     },
     pos = {
         x = 0,
-        y = 2
+        y = 4
     },
     display_size = {
-        w = 71 * 1, 
-        h = 95 * 1
+        w = 71 * 2, 
+        h = 95 * 0.5
     },
     cost = 4,
     rarity = 1,
@@ -34,12 +34,13 @@ SMODS.Joker{ --Magma Stone
     pools = { ["terralat_terralat_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play  then
-            if context.other_card:is_suit("Clubs") then
-                return {
-                    Xmult = 1.5
-                }
-            end
-        end
+    end,
+    
+    add_to_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.discards = G.GAME.round_resets.discards + 1
+    end,
+    
+    remove_from_deck = function(self, card, from_debuff)
+        G.GAME.round_resets.discards = G.GAME.round_resets.discards - 1
     end
 }

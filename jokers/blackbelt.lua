@@ -17,7 +17,7 @@ SMODS.Joker{ --Black Belt
         }
     },
     pos = {
-        x = 6,
+        x = 9,
         y = 1
     },
     display_size = {

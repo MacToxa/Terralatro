@@ -1,23 +1,24 @@
 
-SMODS.Joker{ --Blizzard in a Bottle
-    key = "blizzardinabottle",
+SMODS.Joker{ --Treasure Magnet
+    key = "treasuremagnet",
     config = {
         extra = {
-            hands_change = '1'
+            shop_slots_increase = '1',
+            booster_slots_increase = '1'
         }
     },
     loc_txt = {
-        ['name'] = 'Blizzard in a Bottle',
+        ['name'] = 'Treasure Magnet',
         ['text'] = {
-            [1] = '+1 {C:blue}hand{}'
+            [1] = '{C:attention}+1{} to shop item and booster slots'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 3,
-        y = 1
+        x = 8,
+        y = 3
     },
     display_size = {
         w = 71 * 1, 
@@ -37,10 +38,12 @@ SMODS.Joker{ --Blizzard in a Bottle
     end,
     
     add_to_deck = function(self, card, from_debuff)
-        G.GAME.round_resets.hands = G.GAME.round_resets.hands + 1
+        change_shop_size(1)
+        SMODS.change_booster_limit(1)
     end,
     
     remove_from_deck = function(self, card, from_debuff)
-        G.GAME.round_resets.hands = G.GAME.round_resets.hands - 1
+        change_shop_size(-1)
+        SMODS.change_booster_limit(-1)
     end
 }

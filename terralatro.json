@@ -7,10 +7,11 @@
   "description": "Things from Terraria:\n- Terraria ore tiers as seals\n- Accessories as jokers\n- Consumables as ...consumables\n- Armor sets as decks\nAlso disables all vanilla jokers except the base Joker",
   "prefix": "terralat",
   "main_file": "main.lua",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "priority": 0,
   "badge_colour": "666665",
   "badge_text_colour": "FFFFFF",
+  "display_name": "Terralatro 0.2 (Mobility Expansion)",
   "dependencies": [
     "Steamodded (>=1.0.0~BETA-0827c)"
   ]

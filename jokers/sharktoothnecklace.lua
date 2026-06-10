@@ -16,7 +16,7 @@ SMODS.Joker{ --Shark Tooth Necklace
         }
     },
     pos = {
-        x = 0,
+        x = 3,
         y = 2
     },
     display_size = {

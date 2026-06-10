@@ -23,6 +23,7 @@ A mod that adds Terraria items into Balatro
 > A lot of potions as tarots
 >
 > An option to disable vanilla jokers, vouchers, and tarots (will be on by default)
+
 - ❌ 0.5
 > Permanent consumables rework, all permanent consumables will be vouchers, there will be added more, and there will be upgraded voucher versions of current ones
 ## Planned features
@@ -180,32 +181,32 @@ A mod that adds Terraria items into Balatro
 - ❌ Wrath Potion
 > Double a Joker's base mult for this blind
 ### Seals
-- ❌ Copper Seal
+- ✅ (pending) Copper Seal
 > +5 chips
 
-- ❌ Iron Seal
+- ✅ (pending) Iron Seal
 > +10 chips
 
-- ❌ Silver Seal
+- ✅ (pending) Silver Seal
 > +2 mult
 
-- ❌ Gold Seal
+- ✅ (pending) Gold Seal
 > +15 chips
 
-- ❌ Demonite Seal
+- ✅ (pending) Demonite Seal
 > Retrigger once
 
-- ❌ Hellstone Seal
+- ✅ (pending) Hellstone Seal
 > +10 mult
 
-- ❌ Cobalt Seal
+- ✅ (pending) Cobalt Seal
 > Gains +1 chip when scored
 
-- ❌ Mythril Seal
+- ✅ (pending) Mythril Seal
 > Gains +1 mult when scored
 
-- ❌ Adamantite Seal
+- ✅ (pending) Adamantite Seal
 > X1.25 mult
 
-- ❌ Chlorophyte Seal
-> Creates a copy of itself when scored
+- ✅ (pending) Chlorophyte Seal
+> Retriggers the card 10 times, then destroys itself

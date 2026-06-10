@@ -12,34 +12,51 @@ A mod that adds Terraria items into Balatro
 ## Planned features
 ### Jokers (Permanent buffs) -> negative jokers
 - ✅ Mana Crystal
-> 20 mana
+> +20 mana
 - ✅ Heart Crystal
 > +20 chips
-- ❌ Aegis Fruit
+- ✅ (pending) Aegis Fruit
 > x2 chips
-- ❌ Ambrosia
+- ✅ (pending) Ambrosia
 > Gain $1 at end of round
+- ✅ Demon Heart
+> +1 joker slot
 ### Craftable jokers (do not appear in shop/packs)
 - ❌ Spectre Boots
 > +10 chips for each remaining discard
 > 
 > +1 discard
 >> Hermes Boots + Rocket Boots
+
+- ✅ Avenger Emblem
+> The combination of all suit emblems
+>
+> Every card scored gives +2 Mult
+>
+> x12 Mult
+> +1 discard
+>> All suit emblems
 ### Jokers (Else)
-- ❌ Band of Regeneration
+- ✅ (pending) Band of Regeneration
 > +2 mult
 >> Gains +2 mult every 3 hands
 
-- ❌ Cloud in a Bottle
+- ✅ (pending) Cloud in a Bottle
 > +1 hand
 
-- ❌ Hermes Boots
+- ✅ Blizzard in a Bottle
+> +1 hand
+
+- ✅ (pending) Hermes Boots
 > +1 discard
 
-- ❌ Ankh Shield
+- ✅ Sailfish Boots
+> +1 discard
+
+- ✅ (pending) Ankh Shield
 > Disables boss blinds
 
-- ❌ Shark Tooth Necklace
+- ✅ Shark Tooth Necklace
 > x5 mult
 
 - ❌ Lucky Horseshoe
@@ -48,15 +65,59 @@ A mod that adds Terraria items into Balatro
 - ❌ Celestial Shell
 > ?
 
-- ❌ Star Cloak
-> ?
+- ✅ Star Cloak
+> Uses 30 Mana to add 30 Mult and 10 Chips
 
-- ❌ Sorcerer Emblem
-> ?
+- ✅ Diamond Emblem
+> +2 Mult every Diamond card scored
 
-- ❌ Warrior Emblem
-> +20 mult
->> Applies if hand contains no face cards 
+- ✅ Club Emblem
+> +2 Mult every Club card scored
+
+- ✅ Hearts Emblem
+> +2 Mult every Hearts card scored
+
+- ✅ Spade Emblem
+> +2 Mult every Spade card scored
+
+- ✅ Eye of the Golem
+> Doubles all probabilities
+
+- ✅ Cobalt Shield
+> x2 Chips
+
+- ✅ Frozen Turtle Shell
+> While hands are below or equal to 2, grants +50 Chips
+
+- ✅ Band of Starpower
+> +20 mana
+
+- ✅ Band of Starpower
+> +20 mana
+
+- ✅ Shiny Red Balloon
+> Allows 1 card gaps in straights
+
+- ✅ Black Belt
+> 1 in 10 chance to Chips^100
+
+- ✅ Palladins Shield
+> +1 hand level to the most played hand every hand played
+
+- ✅ Shackle
+> +10 Chips
+
+- ✅ Panic Necklace
+> +2 discards on triggering the boss blind's ability
+
+- ✅ Pygmy Necklace
+> +1 hand size
+
+- ✅ Papyrus Scarab
+> +1 hand size
+
+- ✅ Necromatic Scroll
+> +2 temporary hand size each hand for 10 mana
 ### Consumables (Tarot)
 - ❌ Ironskin Potion
 > Gain +30 chips this blind

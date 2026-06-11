@@ -46,8 +46,15 @@ Made with jokerforge
 - ✅ Demon Heart
 > +1 joker slot
 ### Craftable jokers (do not appear in shop/packs)
+- ❌ Bundle of Balloons
+> +4 hands
+> 
+> +2 discards
+>
+> Allows 1 card gaps in straights
+>> Cloud in a Bottle + Sandstorm in a Bottle + Blizzard in a Bottle + Shiny Red Balloon
 - ❌ Lightning Boots
-> +10 chips for each remaining discard
+> +20 chips for each remaining discard
 >
 > +2 hands
 >
@@ -77,7 +84,13 @@ Made with jokerforge
 > +1 hand
 
 - ✅ Blizzard in a Bottle
-> +1 hand
+> +1 hand, Spades cards score 5 chips more when played
+
+- ❌ Sandstorm in a Bottle
+> +1 hand, +1 discard
+
+- ❌ Fart in a Jar
+> +2 hands, but all held jokers shuffle before scoring a hand
 
 - ✅ (0.2+) Hermes Boots
 > +1 discard
@@ -172,6 +185,15 @@ Made with jokerforge
 - ✅ (0.2+) Rocket Boots
 > +10 Chips for each discard left
 
+- ❌ Frog Leg
+> +10 Mult for each blind skipped
+
+- ❌ Flying Carpet
+> Draws the whole deck to hand
+
+- ❌ Money Trough
+> 1 in 2 chance to gain $1 each time a card is discarded
+
 ### Consumables (Tarot)
 - ❌ Ironskin Potion
 > Gain +30 chips this blind
@@ -187,3 +209,6 @@ Made with jokerforge
 
 - ❌ Wrath Potion
 > Double a Joker's base mult for this blind
+
+- ❌ Featherfall Potion
+> +3$ for every hand left after this blind 

@@ -19,7 +19,7 @@ A mod that adds Terraria items into Balatro
 - ❌ 0.2.1 (Fix)
 > Threw away 3 hours worth of progress on 0.3 to fix game breaking bugs
 >
-> Recipes are now going to be tarot cards with their own pack
+> Recipes are now consumables with their own pack
 
 - ❌ 0.3 (Crafting Expansion)
 > A lot of new accessories obtained by combining accessories

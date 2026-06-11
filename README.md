@@ -5,6 +5,7 @@ Made with jokerforge
 ## How it works
 - Accessories -> jokers
 - Permanent buff consumables -> negative jokers
+- Accessories dropped by bosses -> legendary jokers
 - Potions, other consumables -> tarot cards
 - Ore tiers -> seals (Addon content: [Terralatro-Ores](https://github.com/MacToxa/Terralatro-Ores))
 - Reforges -> enchantments
@@ -28,11 +29,15 @@ Made with jokerforge
 
 - ❌ 0.4 (Drink & Play)
 > A lot of potions as tarots (new consumable rarity called potions, packs to get them)
->
-> An option to disable vanilla jokers, vouchers, and tarots (will be on by default)?
 
 - ❌ 0.5
 > Permanent consumables rework, all permanent consumables will be vouchers, there will be added more, and there will be upgraded voucher versions of current ones
+
+- ❌ 0.6
+> Legendary jokers (Terraria boss drops)
+
+- ❌ 0.7
+> Keys to open chests (packs) for loot (e.g. locked chests in hell, etc.)
 ## Planned features
 ### Jokers (Permanent buffs) -> negative jokers
 - ✅ Mana Crystal
@@ -45,7 +50,38 @@ Made with jokerforge
 > Gain $1 at end of round
 - ✅ Demon Heart
 > +1 joker slot
+### Legendary jokers (boss drops)
+- ❌ Brain of Confusion
+> 1 in 4 chance to +50 Chips on every card scored; the card that triggered it also gains permanent +1 Mult
+
+- ❌ Worf Scarf
+> Reduces blind score requirements by 25%
+
+- ❌ Hive Pack
+> Creates a random negative consumable each blind
+
+- ❌ Bone Glove
+> The lowest scoring card in hands played adds Mult according to it's rank
+
+- ❌ Volatile Gelatin
+> Before scoring any hand, double the lowest rank card's in your hand Chip value is scored
+
+- ❌ Spore Sac
+> After a hand is scored, every card remaining gains +5 permanent Chips
+
 ### Craftable jokers (do not appear in shop/packs)
+- ❌ Charm of Myths
+> +2 mult
+> 
+> Gains +2 mult every 3 hands
+> 
+> Used consumables appear again every blind
+>> Band of Regeneration + Philosophers Stone
+
+- ❌ Celestial Stone
+> The numerator of every probability is increased by a flat 1
+>> Moon Stone + Sun Stone
+
 - ❌ Bundle of Balloons
 > +4 hands
 > 
@@ -53,6 +89,7 @@ Made with jokerforge
 >
 > Allows 1 card gaps in straights
 >> Cloud in a Bottle + Sandstorm in a Bottle + Blizzard in a Bottle + Shiny Red Balloon
+
 - ❌ Lightning Boots
 > +20 chips for each remaining discard
 >
@@ -75,6 +112,7 @@ Made with jokerforge
 > x12 Mult
 > +1 discard
 >> All suit emblems
+
 ### Jokers (Else)
 - ✅ (0.2+) Band of Regeneration
 > +2 mult
@@ -194,9 +232,40 @@ Made with jokerforge
 - ❌ Money Trough
 > 1 in 2 chance to gain $1 each time a card is discarded
 
-### Consumables (Tarot)
+- ❌ Magiluminescence
+> +10 Mult
+>
+> +50 Chips
+>> Always spawns rental
+
+- ❌ Diving Helmet
+> +10 Chips
+>
+> Scored club cards have a 1 in 3 chance to retrigger
+
+- ❌ Destroyer Emblem
+> +10 Mult
+>
+> 1 in 4 played cards scores 10 more Chips
+
+- ❌ Sun Stone
+> Odd antes: +4 Mult and +20 Chips
+>
+> No effect at even antes
+
+- ❌ Moon Stone
+> Even antes: +20 mult and +4 chips
+>
+> No effect at odd antes
+
+- ❌ Philosophers Stone
+> Used consumables appear again every ante
+
+
+
+### Potions (Consumables)
 - ❌ Ironskin Potion
-> Gain +30 chips this blind
+> +30 Chips this blind
 
 - ❌ Swiftness Potion
 > +1 discard this blind
@@ -211,4 +280,8 @@ Made with jokerforge
 > Double a Joker's base mult for this blind
 
 - ❌ Featherfall Potion
-> +3$ for every hand left after this blind 
+> +3$ for every hand left after this blind
+
+### Other consumables
+- ❌ Fallen Star
+> 

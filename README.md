@@ -24,8 +24,8 @@ Made with jokerforge
 >
 > Recipes are now consumables with their own pack
 
-~~- ❌ 0.3 (Crafting Expansion)
-> A lot of new accessories obtained by combining accessories~~
+~~❌ 0.3 (Crafting Expansion)~~
+~~> A lot of new accessories obtained by combining accessories~~
 
 - ❌ 0.3 (Boss Progression)
 > A lot of new accessories obtained by claiming vouchers that progress antes, but unlock new accessories in return

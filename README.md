@@ -4,7 +4,7 @@ A mod that adds Terraria items into Balatro
 - Accessories -> jokers
 - Permanent buff consumables -> negative jokers
 - Potions, other consumables -> tarot cards
-- Ore tiers -> seals (Addon content: TBD)
+- Ore tiers -> seals (Addon content: [Terralatro-Ores](https://github.com/MacToxa/Terralatro-Ores))
 - Reforges -> enchantments
 - Armor sets -> decks (Addon content: [Terralatro-Decks](https://github.com/MacToxa/Terralatro-Decks))
 - HP and taking damage related things -> chips
@@ -185,33 +185,3 @@ A mod that adds Terraria items into Balatro
 
 - ❌ Wrath Potion
 > Double a Joker's base mult for this blind
-### Seals
-- ✅ (pending) Copper Seal
-> +5 chips
-
-- ✅ (pending) Iron Seal
-> +10 chips
-
-- ✅ (pending) Silver Seal
-> +2 mult
-
-- ✅ (pending) Gold Seal
-> +15 chips
-
-- ✅ (pending) Demonite Seal
-> Retrigger once
-
-- ✅ (pending) Hellstone Seal
-> +10 mult
-
-- ✅ (pending) Cobalt Seal
-> Gains +1 chip when scored
-
-- ✅ (pending) Mythril Seal
-> Gains +1 mult when scored
-
-- ✅ (pending) Adamantite Seal
-> X1.25 mult
-
-- ✅ (pending) Chlorophyte Seal
-> Retriggers the card 10 times, then destroys itself

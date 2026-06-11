@@ -1,5 +1,6 @@
 # Terralatro
 A mod that adds Terraria items into Balatro
+-# Made with jokerforge
 ## How it works
 - Accessories -> jokers
 - Permanent buff consumables -> negative jokers

@@ -16,7 +16,7 @@ A mod that adds Terraria items into Balatro
 - ✅ 0.2 (Movement Expansion)
 > A lot of movement related accessories, and also a few economy related ones
 
-- ❌ 0.2.1 (Fix)
+- ✅ 0.2.1 (Fix)
 > Threw away 3 hours worth of progress on 0.3 to fix game breaking bugs
 >
 > Recipes are now consumables with their own pack

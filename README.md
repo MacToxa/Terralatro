@@ -4,7 +4,7 @@ A mod that adds Terraria items into Balatro
 - Accessories -> jokers
 - Permanent buff consumables -> negative jokers
 - Potions, other consumables -> tarot cards
-- Ore tiers -> seals
+- Ore tiers -> seals (Addon content: TBD)
 - Reforges -> enchantments
 - Armor sets -> decks (Addon content: [Terralatro-Decks](https://github.com/MacToxa/Terralatro-Decks))
 - HP and taking damage related things -> chips
@@ -21,13 +21,13 @@ A mod that adds Terraria items into Balatro
 >
 > Recipes are now going to be tarot cards with their own pack
 
-- ❌ 0.3 (Excavation Update)
-> Ore seals that are currently planned
+- ❌ 0.3 (Crafting Expansion)
+> A lot of new accessories obtained by combining accessories
 
 - ❌ 0.4 (Drink & Play)
-> A lot of potions as tarots
+> A lot of potions as tarots (new consumable rarity called potions, packs to get them)
 >
-> An option to disable vanilla jokers, vouchers, and tarots (will be on by default)
+> An option to disable vanilla jokers, vouchers, and tarots (will be on by default)?
 
 - ❌ 0.5
 > Permanent consumables rework, all permanent consumables will be vouchers, there will be added more, and there will be upgraded voucher versions of current ones

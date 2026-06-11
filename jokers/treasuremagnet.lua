@@ -17,7 +17,7 @@ SMODS.Joker{ --Treasure Magnet
         }
     },
     pos = {
-        x = 8,
+        x = 6,
         y = 3
     },
     display_size = {

@@ -15,7 +15,7 @@ SMODS.Joker{ --Shiny Red Balloon
         }
     },
     pos = {
-        x = 5,
+        x = 3,
         y = 1
     },
     display_size = {

@@ -17,7 +17,7 @@ SMODS.Joker{ --Feral Claws
         }
     },
     pos = {
-        x = 7,
+        x = 5,
         y = 3
     },
     display_size = {

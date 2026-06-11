@@ -16,7 +16,7 @@ SMODS.Joker{ --Celestial Magnet
         }
     },
     pos = {
-        x = 6,
+        x = 4,
         y = 3
     },
     display_size = {

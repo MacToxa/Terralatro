@@ -16,7 +16,7 @@ SMODS.Joker{ --Cloud in a Bottle
         }
     },
     pos = {
-        x = 4,
+        x = 2,
         y = 1
     },
     display_size = {

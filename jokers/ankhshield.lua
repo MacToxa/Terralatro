@@ -15,7 +15,7 @@ SMODS.Joker{ --Ankh Shield
         }
     },
     pos = {
-        x = 3,
+        x = 1,
         y = 3
     },
     display_size = {

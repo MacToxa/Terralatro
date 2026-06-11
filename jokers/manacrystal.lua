@@ -18,8 +18,8 @@ SMODS.Joker{ --Mana Crystal
         }
     },
     pos = {
-        x = 1,
-        y = 1
+        x = 9,
+        y = 0
     },
     display_size = {
         w = 71 * 1, 

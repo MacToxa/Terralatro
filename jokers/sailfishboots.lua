@@ -16,7 +16,7 @@ SMODS.Joker{ --Sailfish Boots
         }
     },
     pos = {
-        x = 6,
+        x = 4,
         y = 1
     },
     display_size = {

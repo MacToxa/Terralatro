@@ -25,6 +25,22 @@ SMODS.Atlas({
 })
 
 SMODS.Atlas({
+    key = "CustomConsumables", 
+    path = "CustomConsumables.png", 
+    px = 71,
+    py = 95, 
+    atlas_table = "ASSET_ATLAS"
+})
+
+SMODS.Atlas({
+    key = "CustomBoosters", 
+    path = "CustomBoosters.png", 
+    px = 71,
+    py = 95, 
+    atlas_table = "ASSET_ATLAS"
+})
+
+SMODS.Atlas({
     key = "CustomDecks", 
     path = "CustomDecks.png", 
     px = 71,
@@ -49,11 +65,9 @@ end
 if true then
     assert(SMODS.load_file("jokers/avengeremblem.lua"))()
     assert(SMODS.load_file("jokers/heartsemblem.lua"))()
-    assert(SMODS.load_file("jokers/spadeemblem.lua"))()
-    assert(SMODS.load_file("jokers/diamondemblem.lua"))()
-    assert(SMODS.load_file("jokers/clubemblem.lua"))()
-    assert(SMODS.load_file("jokers/avengeremblemrecipe.lua"))()
-    assert(SMODS.load_file("jokers/spectrebootsrecipe.lua"))()
+    assert(SMODS.load_file("jokers/spadesemblem.lua"))()
+    assert(SMODS.load_file("jokers/diamondsemblem.lua"))()
+    assert(SMODS.load_file("jokers/clubsemblem.lua"))()
     assert(SMODS.load_file("jokers/demonheart.lua"))()
     assert(SMODS.load_file("jokers/eyeofthegolem.lua"))()
     assert(SMODS.load_file("jokers/cobaltshield.lua"))()
@@ -89,9 +103,16 @@ if true then
     assert(SMODS.load_file("jokers/tallycounter.lua"))()
     assert(SMODS.load_file("jokers/aglet.lua"))()
     assert(SMODS.load_file("jokers/iceskates.lua"))()
-    assert(SMODS.load_file("jokers/spectreboots.lua"))()
     assert(SMODS.load_file("jokers/rocketboots.lua"))()
+    assert(SMODS.load_file("jokers/spectreboots.lua"))()
 end
+-- load the consumables
+if true then
+    assert(SMODS.load_file("consumables/spectrebootsrecipe.lua"))()
+    assert(SMODS.load_file("consumables/avengeremblemrecipe.lua"))()
+end
+--load the sets
+assert(SMODS.load_file("consumables/sets.lua"))()
 -- load the decks
 if true then
     assert(SMODS.load_file("decks/platinum_armor.lua"))()
@@ -112,6 +133,9 @@ end
 
 assert(SMODS.load_file("rarities.lua"))()
 
+
+-- load boosters
+assert(SMODS.load_file("boosters.lua"))()
 SMODS.ObjectType({
     key = "terralat_food",
     cards = {
@@ -132,11 +156,9 @@ SMODS.ObjectType({
     cards = {
         ["j_terralat_avengeremblem"] = true,
         ["j_terralat_heartsemblem"] = true,
-        ["j_terralat_spadeemblem"] = true,
-        ["j_terralat_diamondemblem"] = true,
-        ["j_terralat_clubemblem"] = true,
-        ["j_terralat_avengeremblemrecipe"] = true,
-        ["j_terralat_spectrebootsrecipe"] = true,
+        ["j_terralat_spadesemblem"] = true,
+        ["j_terralat_diamondsemblem"] = true,
+        ["j_terralat_clubsemblem"] = true,
         ["j_terralat_demonheart"] = true,
         ["j_terralat_eyeofthegolem"] = true,
         ["j_terralat_cobaltshield"] = true,
@@ -172,8 +194,8 @@ SMODS.ObjectType({
         ["j_terralat_tallycounter"] = true,
         ["j_terralat_aglet"] = true,
         ["j_terralat_iceskates"] = true,
-        ["j_terralat_spectreboots"] = true,
-        ["j_terralat_rocketboots"] = true
+        ["j_terralat_rocketboots"] = true,
+        ["j_terralat_spectreboots"] = true
     },
 })
 

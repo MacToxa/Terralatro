@@ -16,8 +16,8 @@ SMODS.Joker{ --Magma Stone
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 8,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 

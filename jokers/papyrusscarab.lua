@@ -16,7 +16,7 @@ SMODS.Joker{ --Papyrus Scarab
         }
     },
     pos = {
-        x = 7,
+        x = 5,
         y = 2
     },
     display_size = {

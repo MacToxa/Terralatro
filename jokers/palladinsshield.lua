@@ -18,8 +18,8 @@ SMODS.Joker{ --Palladins Shield
         }
     },
     pos = {
-        x = 1,
-        y = 2
+        x = 9,
+        y = 1
     },
     display_size = {
         w = 71 * 1, 

@@ -16,7 +16,7 @@ SMODS.Joker{ --Blizzard in a Bottle
         }
     },
     pos = {
-        x = 3,
+        x = 1,
         y = 1
     },
     display_size = {

@@ -16,7 +16,7 @@ SMODS.Joker{ --Aegis Fruit
         }
     },
     pos = {
-        x = 9,
+        x = 7,
         y = 2
     },
     display_size = {

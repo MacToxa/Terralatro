@@ -17,7 +17,7 @@ SMODS.Joker{ --Tally Counter
         }
     },
     pos = {
-        x = 9,
+        x = 7,
         y = 3
     },
     display_size = {

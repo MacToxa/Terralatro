@@ -17,7 +17,7 @@ SMODS.Joker{ --Star Cloak
         }
     },
     pos = {
-        x = 8,
+        x = 6,
         y = 1
     },
     display_size = {

@@ -16,8 +16,8 @@ SMODS.Joker{ --Aglet
         }
     },
     pos = {
-        x = 0,
-        y = 4
+        x = 8,
+        y = 3
     },
     display_size = {
         w = 71 * 2, 

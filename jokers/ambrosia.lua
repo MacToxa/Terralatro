@@ -16,8 +16,8 @@ SMODS.Joker{ --Ambrosia
         }
     },
     pos = {
-        x = 0,
-        y = 3
+        x = 8,
+        y = 2
     },
     display_size = {
         w = 71 * 1, 

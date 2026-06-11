@@ -16,7 +16,7 @@ SMODS.Joker{ --Hermes Boots
         }
     },
     pos = {
-        x = 7,
+        x = 5,
         y = 1
     },
     display_size = {

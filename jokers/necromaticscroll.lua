@@ -18,7 +18,7 @@ SMODS.Joker{ --Necromatic Scroll
         }
     },
     pos = {
-        x = 6,
+        x = 4,
         y = 2
     },
     display_size = {

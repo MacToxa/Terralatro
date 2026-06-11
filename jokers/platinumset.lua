@@ -16,8 +16,8 @@ SMODS.Joker{ --Platinum Set
         }
     },
     pos = {
-        x = 1,
-        y = 3
+        x = 9,
+        y = 2
     },
     display_size = {
         w = 71 * 1, 

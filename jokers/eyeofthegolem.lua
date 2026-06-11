@@ -16,7 +16,7 @@ SMODS.Joker{ --Eye of the Golem
         }
     },
     pos = {
-        x = 8,
+        x = 6,
         y = 0
     },
     display_size = {

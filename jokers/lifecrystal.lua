@@ -16,7 +16,7 @@ SMODS.Joker{ --Life Crystal
         }
     },
     pos = {
-        x = 8,
+        x = 6,
         y = 2
     },
     display_size = {

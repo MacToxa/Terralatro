@@ -11,7 +11,7 @@ SMODS.Joker{ --Spectre Boots
     loc_txt = {
         ['name'] = 'Spectre Boots',
         ['text'] = {
-            [1] = '{C:blue}+10 Chips{} for each {C:red}discard{} left',
+            [1] = '{C:blue}+10 Chips{} for each remaining {C:red}discard{}',
             [2] = '{C:red}+1 discard{}'
         },
         ['unlock'] = {
@@ -19,11 +19,11 @@ SMODS.Joker{ --Spectre Boots
         }
     },
     pos = {
-        x = 2,
+        x = 1,
         y = 4
     },
     display_size = {
-        w = 71 * 1.2, 
+        w = 71 * 1, 
         h = 95 * 1
     },
     cost = 5,

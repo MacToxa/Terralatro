@@ -18,7 +18,7 @@ SMODS.Joker{ --Demon Heart
         }
     },
     pos = {
-        x = 7,
+        x = 5,
         y = 0
     },
     display_size = {

@@ -19,7 +19,7 @@ SMODS.Joker{ --Band of Regeneration
         }
     },
     pos = {
-        x = 2,
+        x = 0,
         y = 3
     },
     display_size = {

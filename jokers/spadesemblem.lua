@@ -1,28 +1,27 @@
 
-SMODS.Joker{ --Rocket Boots
-    key = "rocketboots",
+SMODS.Joker{ --Spades Emblem
+    key = "spadesemblem",
     config = {
         extra = {
-            repetitions = 1,
-            chips0 = 10
+            mult0 = 2
         }
     },
     loc_txt = {
-        ['name'] = 'Rocket Boots',
+        ['name'] = 'Spades Emblem',
         ['text'] = {
-            [1] = '{C:blue}+10 Chips{} for each {C:red}discard{} left'
+            [1] = '{C:red}+2 Mult{} every {C:spades}Spades{} card scored'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 0,
-        y = 4
+        x = 2,
+        y = 0
     },
     display_size = {
-        w = 71 * 1.2, 
-        h = 95 * 1
+        w = 71 * 1, 
+        h = 95 * 0.8
     },
     cost = 4,
     rarity = 1,
@@ -35,11 +34,11 @@ SMODS.Joker{ --Rocket Boots
     pools = { ["terralat_terralat_jokers"] = true },
     
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
-            if true then
-                for i = 1, card.ability.extra.repetitions do
-                    SMODS.calculate_effect({chips = 10}, card)
-                end
+        if context.individual and context.cardarea == G.play  then
+            if context.other_card:is_suit("Spades") then
+                return {
+                    mult = 2
+                }
             end
         end
     end

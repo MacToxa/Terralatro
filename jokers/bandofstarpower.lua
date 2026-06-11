@@ -17,7 +17,7 @@ SMODS.Joker{ --Band of Starpower
         }
     },
     pos = {
-        x = 2,
+        x = 0,
         y = 1
     },
     display_size = {

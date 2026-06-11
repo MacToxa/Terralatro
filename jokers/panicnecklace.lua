@@ -16,7 +16,7 @@ SMODS.Joker{ --Panic Necklace
         }
     },
     pos = {
-        x = 4,
+        x = 2,
         y = 2
     },
     display_size = {

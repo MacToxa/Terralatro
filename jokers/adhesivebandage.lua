@@ -17,7 +17,7 @@ SMODS.Joker{ --Adhesive Bandage
         }
     },
     pos = {
-        x = 5,
+        x = 3,
         y = 3
     },
     display_size = {

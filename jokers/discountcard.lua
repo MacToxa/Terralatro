@@ -16,7 +16,7 @@ SMODS.Joker{ --Discount Card
         }
     },
     pos = {
-        x = 4,
+        x = 2,
         y = 3
     },
     display_size = {

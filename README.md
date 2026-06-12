@@ -28,8 +28,8 @@ Made with jokerforge
 
 ~~> A lot of new accessories obtained by combining accessories~~
 
-- ❌ 0.3 (Boss Progression)
-> A lot of new accessories obtained by claiming vouchers that progress antes, but unlock new accessories in return
+- ❌ 0.3 (Crafting Evolved)
+> Crafting reworked, it will now be sort of an evolution system; jokers do not need to be combined with other jokers, but they evolve into a stronger version of themselves when they reach an ante threshold
 
 - ❌ 0.4 (Drink & Play)
 > A lot of potions as tarots (new consumable rarity called potions, packs to get them)
